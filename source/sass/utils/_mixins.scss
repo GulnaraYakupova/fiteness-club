@@ -1,0 +1,9 @@
+@mixin h2-desktop {
+  margin: 0;
+  padding: 0;
+  font-family: $additional-font;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-h2;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-1;
+}

@@ -1,0 +1,21 @@
+.features h2 {
+  @include h2-desktop;
+}
+
+.features h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desctop-ll;
+}
+
+.features__value b {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desctop-xxll;
+}
+
+.features__value span {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-s;
+  color: $accent-color-4;
+}

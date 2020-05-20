@@ -1,0 +1,32 @@
+.contacts h2 {
+  @include h2-desktop;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-m;
+}
+
+.contacts address {
+  font-style: normal;
+  line-height: $line-height-mm;
+  font-size: $font-size-desktop-m;
+}
+
+.contacts p {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-desktop-m;
+}
+
+.contacts a {
+  font-size: $font-size-desktop-m;
+}

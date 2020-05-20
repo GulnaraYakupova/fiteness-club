@@ -1,0 +1,25 @@
+.reviews h2 {
+  @include h2-desktop;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews cite {
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-ml;
+}
+
+.reviews p {
+  margin: 0;
+  padding: 0;
+}

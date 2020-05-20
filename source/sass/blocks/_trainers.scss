@@ -1,0 +1,33 @@
+.trainers h2 {
+  @include h2-desktop;
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trainers__list-item--hidden {
+  display: none;
+}
+
+.trainers h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-mm;
+}
+
+.trainers p {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-m;
+}
+
+.trainers__achievs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

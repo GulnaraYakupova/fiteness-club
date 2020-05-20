@@ -1,3 +1,22 @@
-h1 {
-  color: red;
-}
+@import "utils/normalize";
+@import "utils/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+@import "blocks/visually-hidden";
+@import "global";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/info-block";
+@import "blocks/gym-info";
+@import "blocks/subscriptions";
+@import "blocks/controls";
+@import "blocks/planes";
+@import "blocks/banner";
+@import "blocks/trainers";
+@import "blocks/features";
+@import "blocks/promotions";
+@import "blocks/reviews";
+@import "blocks/application";
+@import "blocks/contacts";
+@import "blocks/page-navigation";
+@import "blocks/social-list";

@@ -1,0 +1,10 @@
+.banner h2 {
+  @include h2-desktop;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-xxl;
+}
+
+.banner p {
+  margin: 0;
+  padding: 0;
+}

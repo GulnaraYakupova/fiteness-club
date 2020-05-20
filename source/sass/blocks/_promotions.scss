@@ -1,0 +1,40 @@
+.promotions h2 {
+  @include h2-desktop;
+}
+
+.promotions__list {
+  margin: 0;
+  padding: 0;
+}
+
+.promotions h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-l;
+}
+
+.promotions p {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-regular;
+}
+
+.promotions a {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-xs;
+  text-transform: uppercase;
+}
+
+.promotions__item--main h3 {
+  font-size: $font-size-desktop-l2;
+}
+
+.promotions__item--main p {
+  line-height: $line-height-m;
+  font-size: $font-size-desktop-mm;
+}
+
+.promotions__item--main a {
+  font-size: $font-size-desktop-s;
+}

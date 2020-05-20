@@ -1,0 +1,22 @@
+html {
+  background-color: $main-background-color;
+  font-family: $main-font;
+  color: $main-color;
+  font-size: $font-size-desktop-m;
+  line-height: $line-height-s;
+  font-weight: $font-weight-light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

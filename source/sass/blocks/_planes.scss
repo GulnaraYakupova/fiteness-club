@@ -1,0 +1,29 @@
+.planes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.planes__list--hidden {
+  display: none;
+}
+
+.planes h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-l;
+}
+
+.planes p {
+  margin: 0;
+  padding: 0;
+  color: $accent-color-2;
+  font-weight: $font-weight-regular;
+}
+
+.planes b {
+  color: $accent-color-3;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-desktop-xl;
+}

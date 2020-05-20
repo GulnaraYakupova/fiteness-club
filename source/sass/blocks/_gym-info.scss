@@ -1,0 +1,13 @@
+.gym-info h2 {
+  @include h2-desktop;
+}
+
+.gym-info b {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-mm;
+}
+
+.gym-info p {
+  margin: 0;
+  padding: 0;
+}

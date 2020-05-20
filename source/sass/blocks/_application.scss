@@ -1,0 +1,8 @@
+.application h2 {
+  @include h2-desktop;
+}
+
+.application input {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-s;
+}
