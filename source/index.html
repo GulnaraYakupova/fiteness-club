@@ -12,12 +12,17 @@
 
 <body>
   <div style="display:none">
-    <!-- <include src="build/img/sprite_auto.svg"> -->
+    <include src="build/img/sprite_auto.svg">
   </div>
   <header class="page-header">
     <h1 class="visually-hidden">SUPERGYM - Фитнесс центр в Омске</h1>
     <ul class="page-header__top-list">
-      <li class="page-header__list-item"><a>Logo</a></li>
+      <li class="page-header__list-item"><a>
+          <svg width="89" height="20" fill="none">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+          <span class="visually-hidden">Логотип фитнес клуба SUPERGYM</span>
+        </a></li>
       <li class="page-header__list-item"><a href="tel:88005555555">8-800-555-55-55</a></li>
     </ul>
     <section class="page-header__info info-block" id="services">
@@ -29,7 +34,7 @@
           <li class="info-block__advantages-item">Групповые занятия</li>
           <li class="info-block__advantages-item">Кардио-зона</li>
         </ul>
-        <a href="#" class="button info-block__button">Купить абонемент</a>
+        <a href="#" class="button button--contrast-1 info-block__button">Купить абонемент</a>
       </div>
       <div class="info-block__photo"></div>
       <ul class="info-block__social-list">
@@ -44,15 +49,20 @@
       <div class="gym-info__text">
         <h2>Тренажерный зал</h2>
         <b>Просторный зал площадью 900 кв/м</b>
-        <p class="gym-info__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+        <p class="gym-info__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела
+          и здоровья. Тренажерный
           зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p class="gym-info__text gym-info__text--additional">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+        <p class="gym-info__text gym-info__text--additional">В зале расположены отдельная зона для Crossfit и
+          кардио-зона с 40 тренажерами. Также в фитнес центре есть
           несколько оборудованных залов для различных видов групповых занятий.
         </p>
       </div>
       <div class="gym-info__media">
-        <img src="#" alt="Фото тренажерного зала">
-        <video src="#"></video>
+        <img src="img/gym-desktop@1x.jpg" width="660" height="404" alt="Фото тренажерного зала">
+        <video poster="img/video-poster@1x.jpg" width="364" height="228">
+          <source src="video/sample.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+        <button class="gym-info__video-button"></button>
       </div>
     </section>
     <section class="subscriptions" id="subscriptions">
@@ -68,18 +78,27 @@
             <h3>С тренером</h3>
             <p>12 занятий</p>
             <b>5000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Дневной</h3>
             <p>с 8:00 до 17:00</p>
             <b>1700</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Полный день</h3>
             <p>с 8:00 до 22:00 </p>
             <b>2700</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
         </ul>
@@ -88,18 +107,27 @@
             <h3>С тренером</h3>
             <p>72 занятия</p>
             <b>29000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Дневной</h3>
             <p>с 8:00 до 17:00</p>
             <b>10000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Полный день</h3>
             <p>с 8:00 до 22:00 </p>
             <b>16000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
         </ul>
@@ -108,18 +136,27 @@
             <h3>С тренером</h3>
             <p>144 занятий</p>
             <b>59000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Дневной</h3>
             <p>с 8:00 до 17:00</p>
             <b>20000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
           <li class="planes__item">
             <h3>Полный день</h3>
             <p>с 8:00 до 22:00 </p>
             <b>32000</b>
+            <svg width="30" height="42" fill="#102654">
+              <use xlink:href="#icon-rub"></use>
+            </svg>
             <a href="#" class="button button--contrast planes__button">Купить абонемент</a>
           </li>
         </ul>
@@ -141,7 +178,7 @@
           </table>
         </div>
         <p>Ежегодные соревнования по CrossFit</p>
-        <a href="#" class="button banner__button"></a>
+        <a href="#" class="button button--contrast-1 banner__button">Заполнить заявку</a>
       </div>
       <div class="banner__media">
       </div>
@@ -150,7 +187,7 @@
       <h2>Тренеры</h2>
       <ul class="trainers__list">
         <li class="trainers__list-item">
-          <img src="#" alt="Анна Павлова">
+          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
           <h3>Анна Павлова</h3>
           <p>Yoga</p>
           <ul class="trainers__achievs-list">
@@ -159,7 +196,7 @@
           </ul>
         </li>
         <li class="trainers__list-item">
-          <img src="#" alt="Алексей Лавров">
+          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
           <h3>Алеексей Лавров</h3>
           <p>Boxing</p>
           <ul class="trainers__achievs-list">
@@ -169,7 +206,7 @@
           </ul>
         </li>
         <li class="trainers__list-item">
-          <img src="#" alt="Александр Пашков">
+          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <h3>Александр Пашков</h3>
           <p>Crossfit</p>
           <ul class="trainers__achievs-list">
@@ -179,7 +216,7 @@
           </ul>
         </li>
         <li class="trainers__list-item">
-          <img src="#" alt="Мария Кетова">
+          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <h3>Мария Кетова</h3>
           <p>Zumba</p>
           <ul class="trainers__achievs-list">
@@ -191,7 +228,7 @@
 
         <!--Повторы для демонстрации работы слайдера-->
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Александр Пашков">
+          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <h3>Александр Пашков</h3>
           <p>Crossfit</p>
           <ul class="trainers__achievs-list">
@@ -201,7 +238,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Мария Кетова">
+          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <h3>Мария Кетова</h3>
           <p>Zumba</p>
           <ul class="trainers__achievs-list">
@@ -211,7 +248,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Анна Павлова">
+          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
           <h3>Анна Павлова</h3>
           <p>Yoga</p>
           <ul class="trainers__achievs-list">
@@ -220,7 +257,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Алексей Лавров">
+          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
           <h3>Алеексей Лавров</h3>
           <p>Boxing</p>
           <ul class="trainers__achievs-list">
@@ -230,7 +267,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Мария Кетова">
+          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <h3>Мария Кетова</h3>
           <p>Zumba</p>
           <ul class="trainers__achievs-list">
@@ -240,7 +277,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Анна Павлова">
+          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
           <h3>Анна Павлова</h3>
           <p>Yoga</p>
           <ul class="trainers__achievs-list">
@@ -249,7 +286,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Алексей Лавров">
+          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
           <h3>Алеексей Лавров</h3>
           <p>Boxing</p>
           <ul class="trainers__achievs-list">
@@ -259,7 +296,7 @@
           </ul>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="#" alt="Александр Пашков">
+          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <h3>Александр Пашков</h3>
           <p>Crossfit</p>
           <ul class="trainers__achievs-list">
@@ -269,9 +306,17 @@
           </ul>
         </li>
       </ul>
-      <div class="slider-buttons">
-        <button class="slider-buttons__prev"><span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__next"><span class="visually-hidden">Показать следующих тренеров</span></button>
+      <div class="trainers__buttons slider-buttons">
+        <button class="slider-buttons__button slider-buttons__button--prev">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+          <span class="visually-hidden">Показать предыдущих тренеров</span></button>
+        <button class="slider-buttons__button slider-buttons__button--prev">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Показать следующих тренеров</span></button>
       </div>
     </section>
     <section class="features">
@@ -279,29 +324,39 @@
       <table class="features__table">
         <tbody>
           <tr>
-            <td class="features__title"><h3>Площадь</h3></td>
+            <td class="features__title">
+              <h3>Площадь</h3>
+            </td>
             <td class="features__value"><b>900</b><span>кв.м</span></td>
             <td class="features__info">Занимайтесь без очередей и толкучки</td>
           </tr>
           <tr>
-            <td class="features__title"><h3>Комфорт</h3></td>
+            <td class="features__title">
+              <h3>Комфорт</h3>
+            </td>
             <td class="features__value"><b>350</b><span>мест</span></td>
             <td class="features__info">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</td>
           </tr>
         </tbody>
         <tr class="features__block features__block--main">
-          <td class="features__title"><h3>Тренажеров</h3></td>
+          <td class="features__title">
+            <h3>Тренажеров</h3>
+          </td>
           <td class="features__value"><b>100</b></td>
           <td class="features__info">Современные тренажеры на все группы мышц</td>
         </tr>
         <tbody>
           <tr>
-            <td class="features__title"><h3>Собственная парковка</h3></td>
+            <td class="features__title">
+              <h3>Собственная парковка</h3>
+            </td>
             <td class="features__value"><b>70</b><span>машин</span></td>
             <td class="features__info">Вы всегда найдете место для своей машины на нашей парковке</td>
           </tr>
           <tr>
-            <td class="features__title"><h3>Тренерский опыт</h3></td>
+            <td class="features__title">
+              <h3>Тренерский опыт</h3>
+            </td>
             <td class="features__value"><b>5+</b><span>лет</span></td>
             <td class="features__info">Добивайтесь своих целей быстрее с профессиональным тренером</td>
           </tr>
@@ -334,8 +389,8 @@
     <section class="reviews">
       <h2>Отзывы</h2>
       <ul class="reviews__list">
-        <li>
-          <img src="#" alt="Анна Орлова, клиентка Фитнес клуба">
+        <li class="reviews__item">
+          <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
           <blockquote>
             <cite>Анна Орлова</cite>
             <p>«Хожу в SuperClub уже больше года.
@@ -345,15 +400,15 @@
         </li>
 
         <!--Для демонстрации работы слайдера-->
-        <li>
-          <img src="#" alt="Лена Попова, клиентка Фитнес клуба">
+        <li class="reviews__item">
+          <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Лена Попова, клиентка Фитнес клуба">
           <blockquote>
             <cite>Лена Попова</cite>
             <p>«Любимый фитнес клуб в Омске»</p>
           </blockquote>
         </li>
-        <li>
-          <img src="#" alt="Сергей Дуров, клиент Фитнес клуба">
+        <li class="reviews__item">
+          <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Сергей Дуров, клиент Фитнес клуба">
           <blockquote>
             <cite>Сергей Дуров</cite>
             <p>«Хожу в SuperClub уже больше года.
@@ -362,9 +417,17 @@
           </blockquote>
         </li>
       </ul>
-      <div class="slider-buttons">
-        <button class="slider-buttons__prev"><span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__next"><span class="visually-hidden">Показать следующих тренеров</span></button>
+      <div class="reviews__buttons slider-buttons">
+        <button class="slider-buttons__button slider-buttons__button--prev">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+          <span class="visually-hidden">Показать предыдущих тренеров</span></button>
+        <button class="slider-buttons__button slider-buttons__button--prev">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Показать следующих тренеров</span></button>
       </div>
     </section>
     <section class="application">
@@ -374,7 +437,7 @@
         <input type="text" name="name" id="name" placeholder="Имя">
         <label class="visually-hidden" for="phone">Телефон</label>
         <input type="tel" name="phone" id="phone" placeholder="Телефон">
-        <button class="button application__button" type="submit">Отправить</button>
+        <button class="button button--contrast-1 application__button" type="submit">Отправить</button>
       </form>
     </section>
     <section class="contacts">
@@ -406,6 +469,9 @@
       <ul class="page-navigation__list">
         <li class="page-navigation__list-item">
           <a class="page-footer__logo">
+            <svg width="89" height="20" fill="none">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
             <span class="visually-hidden">Логотип фитнес клуба SUPERGYM</span>
           </a>
         </li>
@@ -427,11 +493,23 @@
       </ul>
     </nav>
     <ul class="page-footer__social social-list">
-      <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Supergym в Фейсбуке</span></a>
+      <li class="social-list__item"><a href="#">
+          <svg width="24" height="13" fill="none">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+          <span class="visually-hidden">Страница Supergym во Вконтакте</span></a>
       </li>
-      <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Supergym во Вконтакте</span></a>
+      <li class="social-list__item"><a href="#">
+          <svg width="24" height="24" fill="none">
+            <use xlink:href="#icon-insta"></use>
+          </svg>
+          <span class="visually-hidden">Страница Supergym в Инстаграм</span></a>
       </li>
-      <li class="social-list__item"><a href="#"><span class="visually-hidden">Страница Supergym в Инстаграм</span></a>
+      <li class="social-list__item"><a href="#">
+          <svg width="12" height="24" fill="none">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+          <span class="visually-hidden">Страница Supergym в Фейсбуке</span></a>
       </li>
     </ul>
   </footer>

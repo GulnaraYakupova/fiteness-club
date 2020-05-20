@@ -1,3 +1,7 @@
+.features {
+  background-color: $accent-background-2;
+}
+
 .features h2 {
   @include h2-desktop;
 }
@@ -18,6 +22,11 @@
   font-weight: $font-weight-regular;
   font-size: $font-size-desktop-s;
   color: $accent-color-4;
+}
+
+.features__block--main {
+  color: $second-color;
+  background-color: $accent-background-3;
 }
 
 .features__block--main h3 {

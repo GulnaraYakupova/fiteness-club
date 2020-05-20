@@ -1,3 +1,8 @@
+.page-header {
+  background-color: $accent-background;
+  color: $second-color;
+}
+
 .page-header__top-list {
   padding: 0;
   margin: 0;
@@ -7,6 +12,10 @@
   font-size: $font-size-desktop-l;
   text-transform: uppercase;
   letter-spacing: $letter-spacing-1;
+}
+
+.page-header a {
+  color: $second-color;
 }
 
 @media (max-width: $tablet-full-width) {

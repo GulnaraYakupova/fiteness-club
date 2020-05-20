@@ -26,6 +26,11 @@
   text-transform: uppercase;
 }
 
+.promotions__item--main {
+  color: $second-color;
+  background-color: $banner-background;
+}
+
 .promotions__item--main h3 {
   font-size: $font-size-desktop-l2;
 }
@@ -37,6 +42,7 @@
 
 .promotions__item--main a {
   font-size: $font-size-desktop-s;
+  color: $second-color;
 }
 
 @media (max-width: $tablet-full-width) {

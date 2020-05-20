@@ -12,6 +12,17 @@
   padding: 0;
 }
 
+.gym-info__video-button {
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+}
+
 @media (max-width: $tablet-full-width) {
   .gym-info h2 {
     @include h2-tablet;

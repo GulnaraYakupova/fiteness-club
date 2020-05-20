@@ -24,6 +24,11 @@
   padding: 0;
 }
 
+.reviews__item {
+  color: $second-color;
+  background-color: $accent-background-3;
+}
+
 @media (max-width: $tablet-full-width) {
   .reviews h2 {
     @include h2-tablet;

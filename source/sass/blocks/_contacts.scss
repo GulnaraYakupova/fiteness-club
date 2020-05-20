@@ -29,6 +29,7 @@
 
 .contacts a {
   font-size: $font-size-desktop-m;
+  color: $main-color;
 }
 
 @media (max-width: $tablet-full-width) {
