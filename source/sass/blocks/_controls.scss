@@ -11,3 +11,15 @@
 .controls__button--active {
   color: $main-color;
 }
+
+@media (max-width: $tablet-full-width) {
+  .controls__button {
+    font-size: $font-size-desktop-mm;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .controls__button {
+    font-size: $font-size-desktop-m;
+  }
+}

@@ -31,3 +31,15 @@
   padding: 0;
   list-style: none;
 }
+
+@media (max-width: $tablet-full-width) {
+  .trainers h2 {
+    @include h2-tablet;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .trainers h2 {
+    @include h2-mobile;
+  }
+}

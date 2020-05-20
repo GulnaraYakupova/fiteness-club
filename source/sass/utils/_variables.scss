@@ -3,7 +3,9 @@ $main-background-color: #ffffff;
 $main-font: "Roboto Condensed",
   "Arial",
   sans-serif;
-$additional-font: "BebasNeue";
+$additional-font: "BebasNeue",
+  "Arial",
+  sans-serif;
 
 $main-color: #102654;
 $second-color: #ffffff;
@@ -23,14 +25,32 @@ $font-size-desktop-s: 14px;
 $font-size-desktop-m: 16px;
 $font-size-desktop-mm: 18px;
 $font-size-desktop-ml: 20px;
-$font-size-desctop-ll: 22px;
+$font-size-desktop-ll: 22px;
 $font-size-desktop-l: 26px;
 $font-size-desktop-l2: 28px;
 $font-size-desktop-h2: 49px;
 $font-size-desktop-xl: 60px;
 $font-size-desktop-xxl: 90px;
-$font-size-desctop-xxll: 71px;
+$font-size-desktop-xxll: 71px;
+$font-size-desktop-xxxll: 74px;
 $font-size-desktop-xxxl: 109px;
+$font-size-tablet-xs: 10px;
+$font-size-tablet-s: 12px;
+$font-size-tablet-m: 18px;
+$font-size-tablet-l: 24px;
+$font-size-tablet-xl: 34px;
+$font-size-tablet-h2: 42px;
+$font-size-tablet-xxxl: 86px;
+$font-size-tablet-ll: 52px;
+$font-size-tablet-xxl: 58px;
+
+$font-size-mobile-m: 16px;
+$font-size-mobile-l: 20px;
+$font-size-mobile-ll: 22px;
+$font-size-mobile-xl: 28px;
+$font-size-mobile-h2: 32px;
+$font-size-mobile-xxl: 48px;
+$font-size-mobile-xxxl: 78px;
 
 $font-weight-light: 300;
 $font-weight-regular: 400;
@@ -38,3 +58,7 @@ $font-weight-bold: 700;
 
 $letter-spacing-1: 1.3px;
 $letter-spacing-2: 1.5px;
+
+$desktop-full-width: 1366px;
+$tablet-full-width: 1199px;
+$mobile-full-width: 767px;

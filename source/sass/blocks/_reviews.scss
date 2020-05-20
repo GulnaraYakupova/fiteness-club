@@ -23,3 +23,15 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $tablet-full-width) {
+  .reviews h2 {
+    @include h2-tablet;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .reviews h2 {
+    @include h2-mobile;
+  }
+}

@@ -6,16 +6,48 @@
   margin: 0;
   padding: 0;
   font-weight: $font-weight-bold;
-  font-size: $font-size-desctop-ll;
+  font-size: $font-size-desktop-ll;
 }
 
 .features__value b {
   font-weight: $font-weight-bold;
-  font-size: $font-size-desctop-xxll;
+  font-size: $font-size-desktop-xxll;
 }
 
 .features__value span {
   font-weight: $font-weight-regular;
   font-size: $font-size-desktop-s;
   color: $accent-color-4;
+}
+
+.features__block--main h3 {
+  font-size: $font-size-desktop-l;
+}
+
+.features__block--main b {
+  font-size: $font-size-desktop-xxxll;
+}
+
+@media (max-width: $tablet-full-width) {
+  .features h2 {
+    @include h2-tablet;
+  }
+
+  .features h3 {
+    font-size: $font-size-mobile-l;
+  }
+
+  .features__value b {
+    font-size: $font-size-tablet-xxl;
+  }
+
+  .features__block--main h3 {
+    font-size: $font-size-mobile-l;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .features h2 {
+    @include h2-mobile;
+  }
 }

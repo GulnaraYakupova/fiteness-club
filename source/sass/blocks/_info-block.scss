@@ -24,3 +24,23 @@
   font-size: $font-size-desktop-xs;
   text-transform: uppercase;
 }
+
+@media (max-width: $tablet-full-width) {
+  .info-block b {
+    font-size: $font-size-tablet-xl;
+  }
+
+  .info-block h2 {
+    font-size: $font-size-tablet-xxxl;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .info-block b {
+    font-size: $font-size-mobile-xl;
+  }
+
+  .info-block h2 {
+    font-size: $font-size-mobile-xxxl;
+  }
+}

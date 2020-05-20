@@ -30,3 +30,31 @@
 .contacts a {
   font-size: $font-size-desktop-m;
 }
+
+@media (max-width: $tablet-full-width) {
+  .contacts h2 {
+    @include h2-tablet;
+  }
+
+  .contacts h3 {
+    font-size: $font-size-mobile-l;
+  }
+
+  .contacts address {
+    font-size: $font-size-tablet-m;
+  }
+
+  .contacts p {
+    font-size: $font-size-tablet-m;
+  }
+
+  .contacts a {
+    font-size: $font-size-tablet-m;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .contacts h2 {
+    @include h2-mobile;
+  }
+}

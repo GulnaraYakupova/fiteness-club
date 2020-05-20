@@ -27,3 +27,13 @@
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xl;
 }
+
+@media (max-width: $mobile-full-width) {
+  .planes h3 {
+    font-size: $font-size-mobile-ll;
+  }
+
+  .planes b {
+    font-size: $font-size-mobile-xxl;
+  }
+}

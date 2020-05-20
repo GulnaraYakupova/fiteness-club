@@ -7,3 +7,11 @@
   text-transform: uppercase;
   letter-spacing: $letter-spacing-1;
 }
+
+@mixin h2-tablet {
+  font-size: $font-size-tablet-h2;
+}
+
+@mixin h2-mobile {
+  font-size: $font-size-mobile-h2;
+}

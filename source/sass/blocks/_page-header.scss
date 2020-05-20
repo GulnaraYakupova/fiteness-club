@@ -8,3 +8,15 @@
   text-transform: uppercase;
   letter-spacing: $letter-spacing-1;
 }
+
+@media (max-width: $tablet-full-width) {
+  .page-header__top-list {
+    font-size: $font-size-tablet-l;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .page-header__top-list {
+    font-size: $font-size-mobile-l;
+  }
+}

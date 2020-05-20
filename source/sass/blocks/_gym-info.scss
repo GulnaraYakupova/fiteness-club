@@ -11,3 +11,19 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $tablet-full-width) {
+  .gym-info h2 {
+    @include h2-tablet;
+  }
+
+  .gym-info__text--additional {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .gym-info h2 {
+    @include h2-mobile;
+  }
+}

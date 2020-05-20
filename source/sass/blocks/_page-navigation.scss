@@ -5,3 +5,9 @@
   font-size: $font-size-desktop-s;
   font-weight: $font-weight-regular;
 }
+
+@media (max-width: $mobile-full-width) {
+  .page-navigation__list {
+    font-size: $font-size-mobile-m;
+  }
+}

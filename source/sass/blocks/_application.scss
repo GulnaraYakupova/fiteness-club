@@ -6,3 +6,19 @@
   font-weight: $font-weight-regular;
   font-size: $font-size-desktop-s;
 }
+
+.application__button {
+  font-size: $font-size-desktop-s;
+}
+
+@media (max-width: $tablet-full-width) {
+  .application h2 {
+    @include h2-tablet;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .application h2 {
+    @include h2-mobile;
+  }
+}
