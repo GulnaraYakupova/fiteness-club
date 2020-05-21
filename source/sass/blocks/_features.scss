@@ -2,6 +2,10 @@
   background-color: $accent-background-2;
 }
 
+.features tr {
+  display: flex;
+}
+
 .features h2 {
   @include h2-desktop;
 }

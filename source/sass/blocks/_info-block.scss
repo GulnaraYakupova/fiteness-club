@@ -4,7 +4,7 @@
 }
 
 .info-block__text {
-  width: 34.3%;
+  width: 34.1%;
   padding-top: 114px;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@
   @include h2-desktop;
   line-height: $line-height-ss;
   margin-bottom: 12px;
+  letter-spacing: 1.5px;
 }
 
 .info-block h2 {
@@ -34,7 +35,7 @@
   padding: 0;
   margin: 0;
   width: 113px;
-  margin-right: 263px;
+  margin-right: 265px;
   margin-top: -95px;
   margin-bottom: 84px;
   list-style: none;
