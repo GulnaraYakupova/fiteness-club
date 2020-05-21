@@ -1,19 +1,95 @@
 .subscriptions {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.subscriptions__container {
   background-color: $accent-background-2;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscriptions::before {
+  content: "";
+  position: absolute;
+  width: 287px;
+  height: 464px;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/dumbbels-desktop@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .subscriptions h2 {
   @include h2-desktop;
+  margin-bottom: 24px;
+}
+
+.subscriptions__controls {
+  margin-bottom: 39px;
+}
+
+.subscriptions__planes {
+  align-self: flex-start;
 }
 
 @media (max-width: $tablet-full-width) {
+  .subscriptions {
+    padding-bottom: 100px;
+  }
+
+  .subscriptions::before {
+    width: 347px;
+    height: 419px;
+    background-image: url("../img/dumbbels-tablet@1x.png");
+  }
+
+  .subscriptions__container {
+    padding-top: 101px;
+    padding-bottom: 60px;
+  }
+
   .subscriptions h2 {
     @include h2-tablet;
+    margin-bottom: 18px;
+  }
+
+  .subscriptions__controls {
+    margin-bottom: 46px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .subscriptions {
+    padding-bottom: 50px;
+  }
+  
+  .subscriptions__container {
+    padding-top: 70px;
+    padding-bottom: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .subscriptions h2 {
+    margin-bottom: 11px;
+  }
+
+  .subscriptions::before {
+    display: none;
+  }
+
   .subscriptions h2 {
     @include h2-mobile;
+  }
+
+  .subscriptions__controls {
+    margin-bottom: 36px;
   }
 }

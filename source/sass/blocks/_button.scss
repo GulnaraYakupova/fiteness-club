@@ -11,22 +11,24 @@
   letter-spacing: 0.6px;
   background-color: transparent;
   color: $main-color;
-  border: 4px solid $main-color;
+  outline: 4px solid $main-color;
 }
 
 .button--contrast {
   color: $main-color;
-  border-color: $main-color;
+  outline-color: $main-color;
 }
 
 .button--contrast-1 {
   color: $second-color;
-  border-color: $second-color;
+  outline-color: $second-color;
 }
 
 .button:hover,
 .button:focus {
   background-image: linear-gradient(111.72deg, $banner-background 17.6%, $gradient-button 95.31%);
+  outline: none;
+  color: $second-color;
 }
 
 .button:active {
@@ -35,12 +37,12 @@
 
 @media (max-width: $tablet-full-width) {
   .button {
-    padding: 17px 31px;
+    padding: 19px 31px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
   .button {
-    width: 290px;
+    width: 287px;
   }
 }

@@ -1,7 +1,14 @@
+.planes {
+  width: 100%;
+  line-height: 1;
+}
+
 .planes__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .planes__list--hidden {
@@ -13,6 +20,7 @@
   padding: 0;
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-l;
+  margin-bottom: 16px;
 }
 
 .planes p {
@@ -20,12 +28,71 @@
   padding: 0;
   color: $accent-color-2;
   font-weight: $font-weight-regular;
+  margin-bottom: 85px;
 }
 
 .planes b {
   color: $accent-color-3;
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xl;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 10;
+}
+
+.planes b::before {
+  content: attr(data-parent);
+  text-shadow: -20px -44px 0 $shadow-color;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  line-height: 1;
+  font-size: 100px;
+  z-index: -1;
+}
+
+.planes__item {
+  border: 7px solid transparent;
+  width: 31%;
+  box-sizing: border-box;
+  background-color: $main-background-color;
+  padding-top: 57px;
+  padding-bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.planes__item:hover {
+  border-image: linear-gradient(to right bottom, $border-color-2, $gradient-color-3) 30;
+}
+
+.planes__button {
+  padding: 24px 12%;
+}
+
+@media (max-width: $tablet-full-width) {
+  .planes__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planes__item {
+    width: 68%;
+    padding-bottom: 61px;
+    margin-bottom: 41px;
+  }
+
+  .planes b {
+    margin-bottom: 52px;
+  }
+
+  .planes__button {
+    padding: 24px 10%;
+  }
 }
 
 @media (max-width: $mobile-full-width) {
@@ -35,5 +102,31 @@
 
   .planes b {
     font-size: $font-size-mobile-xxl;
+    margin-bottom: 44px;
+  }
+
+  .planes p {
+    margin-bottom: 69px;
+  }
+
+  .planes__item {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .planes__item svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .planes__button {
+    width: 74%;
+  }
+
+  .planes b::before {
+    font-size: 80px;
+    text-shadow: -15px -36px 0 #e8e8e8
   }
 }

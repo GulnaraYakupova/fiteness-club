@@ -1,24 +1,66 @@
+.controls {
+  display: flex;
+  min-width: 340px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.controls::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $border-color;
+}
+
 .controls__button {
   margin: 0;
   padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border: none;
   background-color: transparent;
   font-weight: $font-weight-regular;
   font-size: $font-size-desktop-ml;
   color: $accent-color-1;
+  border-bottom: 2px solid transparent;
+}
+
+.controls__button:hover,
+.controls__button:focus {
+  color: $border-color-2;
+}
+
+.controls__button:active {
+  color: $main-color;
 }
 
 .controls__button--active {
   color: $main-color;
+  border-color: $border-color-2;
+}
+
+.controls__button--active:hover,
+.controls__button--active:focus {
+  color: $main-color;
 }
 
 @media (max-width: $tablet-full-width) {
+  .controls {
+    min-width: 332px;
+  }
+
   .controls__button {
     font-size: $font-size-desktop-mm;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .controls {
+    min-width: 290px;
+  }
+
   .controls__button {
     font-size: $font-size-desktop-m;
   }

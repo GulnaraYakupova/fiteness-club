@@ -69,6 +69,15 @@
   margin-top: 15px;
 }
 
+.info-block__social-list a:hover,
+.info-block__social-list a:focus {
+  opacity: 0.7;
+}
+
+.info-block__social-list a:active {
+  opacity: 0.5;
+}
+
 @media (max-width: $tablet-full-width) {
   .info-block b {
     font-size: $font-size-tablet-xl;
@@ -125,6 +134,6 @@
   .info-block__advantages-list {
     margin-top: -78px;
     margin-right: 180px;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 }
