@@ -1,46 +1,129 @@
+.info-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block__text {
+  width: 34.3%;
+  padding-top: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  text-align: end;
+}
+
 .info-block b {
   @include h2-desktop;
+  line-height: $line-height-ss;
+  margin-bottom: 12px;
 }
 
 .info-block h2 {
   margin: 0;
   padding: 0;
+  width: 300px;
   font-family: $additional-font;
   font-size: $font-size-desktop-xxxl;
   text-transform: uppercase;
-  letter-spacing: $letter-spacing-1;
+  letter-spacing: 3.2px;
+  line-height: $line-height-ss;
 }
 
 .info-block__advantages-list {
   padding: 0;
   margin: 0;
+  width: 113px;
+  margin-right: 263px;
+  margin-top: -95px;
+  margin-bottom: 84px;
   list-style: none;
   font-size: $font-size-desktop-s;
+}
+
+.info-block__photo {
+  width: 500px;
+  height: 556px;
+  margin-top: -7px;
+  background-image: url("../img/man-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .info-block__social-list {
   margin: 0;
   padding: 0;
+  width: 11.9%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style: none;
   font-size: $font-size-desktop-xs;
   text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.info-block__social-list li {
+  margin-top: 15px;
 }
 
 @media (max-width: $tablet-full-width) {
   .info-block b {
     font-size: $font-size-tablet-xl;
+    margin-bottom: 6px;
   }
 
   .info-block h2 {
     font-size: $font-size-tablet-xxxl;
+    width: 235px;
+  }
+
+  .info-block__social-list {
+    display: none;
+  }
+
+  .info-block__photo {
+    width: 324px;
+    height: 390px;
+    margin-top: 0;
+    background-image: url("../img/man-tablet@1x.jpg");
+  }
+
+  .info-block__text {
+    padding-top: 57px;
+    width: 47.9%;
+  }
+
+  .info-block__advantages-list {
+    margin-top: -83px;
+    margin-right: 213px;
+    margin-bottom: 57px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .info-block__text {
+    width: 290px;
+  }
+
   .info-block b {
+    margin-bottom: 13px;
     font-size: $font-size-mobile-xl;
   }
 
   .info-block h2 {
+    letter-spacing: 2.5px;
     font-size: $font-size-mobile-xxxl;
+  }
+
+  .info-block__photo {
+    display: none;
+  }
+
+  .info-block__advantages-list {
+    margin-top: -78px;
+    margin-right: 180px;
+    margin-bottom: 55px;
   }
 }

@@ -3,12 +3,12 @@
   vertical-align: middle;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 15px 35px;
+  padding: 17px 48px;
   text-align: center;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
   font-size: $font-size-desktop-xs;
-  letter-spacing: $letter-spacing-2;
+  letter-spacing: 0.6px;
   background-color: transparent;
   color: $main-color;
   border: 4px solid $main-color;
@@ -22,4 +22,20 @@
 .button--contrast-1 {
   color: $second-color;
   border-color: $second-color;
+}
+
+.button--contrast-1:hover {
+  background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+@media (max-width: $tablet-full-width) {
+  .button {
+    padding: 17px 31px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .button {
+    width: 290px;
+  }
 }
