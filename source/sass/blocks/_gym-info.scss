@@ -57,6 +57,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  background-color: $accent-color-2;
 }
 
 .gym-info__video-button {
@@ -82,6 +83,10 @@
 
 .gym-info__video-button:active {
   opacity: 0.5;
+}
+
+.gym-info img {
+  background-color: $border-color;
 }
 
 @media (max-width: $tablet-full-width) {
