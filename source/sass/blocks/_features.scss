@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   padding-left: 11.8%;
   padding-right: 11.8%;
   line-height: 1.4;
@@ -63,6 +63,7 @@
 
 .features h2 {
   @include h2-desktop;
+  margin-bottom: 3px;
 }
 
 .features h3 {
@@ -112,7 +113,7 @@ tr.features__block--main {
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 14.3%;
+  top: 13.8%;
   left: 38.6%;
   color: $second-color;
   background-color: $accent-background-3;

@@ -10,5 +10,6 @@
 @media (max-width: $mobile-full-width) {
   .page-navigation__list {
     font-size: $font-size-mobile-m;
+    flex-direction: column;
   }
 }

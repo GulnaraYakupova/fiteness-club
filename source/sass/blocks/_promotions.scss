@@ -1,5 +1,15 @@
+.promotions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
 .promotions h2 {
+  align-self: center;
   @include h2-desktop;
+  margin-bottom: 50px;
 }
 
 .promotions__list {
@@ -9,7 +19,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 462px;
+  height: 502px;
+}
+
+.promotions__first-br {
+  display: none;
 }
 
 .promotions h3 {
@@ -28,13 +42,93 @@
 .promotions a {
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xs;
+  color: $accent-background-3;
   text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  border-bottom: 1px solid $accent-background-3;
+  display: inline-block;
+}
+
+.promotions a:hover,
+.promotions a:focus {
+  opacity: 0.7;
+}
+
+.promotions a:active {
+  opacity: 0.5;
+}
+
+.promotions__item {
+  width: 48.3%;
+  box-sizing: border-box;
+  color: $accent-background-3;
+  border: 7px solid $border-color-2;
+  border-image: linear-gradient(to right bottom, $border-color-2, $gradient-color-3) 30;
 }
 
 .promotions__item--main {
   color: $second-color;
-  background-color: $banner-background;
+  width: 48.3%;
   height: 462px;
+  display: flex;
+  margin-right: 3.5%;
+  border: none;
+}
+
+.promotions__item--additional {
+  padding: 24px 2.5%;
+  padding-bottom: 28px;
+  line-height: 1;
+  min-height: 211px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promotions__item--additional h3 {
+  margin-bottom: 13px;
+}
+
+.promotions__item--main h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.promotions__item--main b {
+  font-size: $font-size-desktop-xxlll;
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+.promotions__item--main a {
+  border-color: $second-color;
+}
+
+.promotions__item-left {
+  background-color: $banner-background;
+  width: 50%;
+  padding-top: 42px;
+  padding-bottom: 44px;
+  padding-left: 8.1%;
+  box-sizing: border-box;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promotions__item--main p {
+  width: 84%;
+}
+
+.promotions__item-right {
+  width: 50%;
+  background-image: url("../img/fit-girl-desktop@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .promotions__item--main h3 {
@@ -52,14 +146,126 @@
 }
 
 @media (max-width: $tablet-full-width) {
+  .promotions {
+    padding-left: 5.9%;
+    padding-right: 5.9%;
+    padding-top: 101px;
+  }
+
+  .promotions h2 {
+    margin-bottom: 39px;
+  }
+
+  .promotions__item {
+    width: 47.8%;
+  }
+
+  .promotions__list {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .promotions__item--main {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .promotions__item--additional {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .promotions__item--additional h3 {
+    margin-bottom: 12px;
+  }
+
+  .promotions__item--additional p {
+    line-height: 1.3;
+  }
+
+  .promotions__item-left {
+    width: 41.1%;
+    padding-left: 6.6%;
+  }
+
+  .promotions__item-right {
+    width: 58.9%;
+    background-image: url("../img/fit-girl-tablet@1x.jpg");
+  }
+
   .promotions h2 {
     @include h2-tablet;
+  }
+
+  .promotions__first-br {
+    display: block;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .promotions {
+    padding-top: 71px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+  }
+
+  .promotions h2 {
+    margin-bottom: 41px;
+  }
+
   .promotions__list {
+    flex-direction: column;
+  }
+
+  .promotions__item--main {
+    flex-direction: column;
     height: auto;
+  }
+
+  .promotions__item--main h3 {
+    margin-bottom: -4px;
+  }
+
+  .promotions__item-left {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 299px;
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .promotions__top {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .promotions__item p {
+    width: 64%;
+    text-align: center;
+  }
+
+  .promotions__item--main p {
+    width: 67%;
+  }
+
+  .promotions__item-right {
+    width: 100%;
+    height: 299px;
+  }
+
+  .promotions__item--additional {
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 39px;
+    margin-bottom: 30px;
+  }
+
+  .promotions__bottom {
+    text-align: center;
   }
 
   .promotions h2 {
