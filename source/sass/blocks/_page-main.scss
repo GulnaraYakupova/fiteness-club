@@ -1,0 +1,9 @@
+.page-main__bottom-block {
+  display: flex;
+}
+
+@media (max-width: $mobile-full-width) {
+  .page-main__bottom-block {
+    flex-direction: column;
+  }
+}

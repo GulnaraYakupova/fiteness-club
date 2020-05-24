@@ -1,6 +1,32 @@
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -184px;
+  margin-bottom: 184px;
+  padding-left: 3.4%;
+  padding-right: 3.4%;
+}
+
 .slider-buttons__button {
   padding: 0;
   margin: 0;
   border: none;
+  outline: none;
   background-color: transparent;
+}
+
+.slider-buttons__button:hover svg,
+.slider-buttons__button:focus svg {
+  width: 18px;
+  height: 36px;
+}
+
+.slider-buttons__button:active {
+  opacity: 0.5;
+}
+
+@media (max-width: $mobile-full-width) {
+  .slider-buttons {
+    margin-bottom: 134px;
+  }
 }

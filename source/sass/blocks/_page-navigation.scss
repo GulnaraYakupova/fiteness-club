@@ -4,6 +4,7 @@
   list-style: none;
   font-size: $font-size-desktop-s;
   font-weight: $font-weight-regular;
+  display: flex;
 }
 
 @media (max-width: $mobile-full-width) {

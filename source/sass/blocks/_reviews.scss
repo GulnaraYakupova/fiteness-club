@@ -29,6 +29,10 @@
   background-color: $accent-background-3;
 }
 
+.reviews__item--hidden {
+  display: none;
+}
+
 @media (max-width: $tablet-full-width) {
   .reviews h2 {
     @include h2-tablet;
