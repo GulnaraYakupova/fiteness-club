@@ -7,8 +7,8 @@
 }
 
 .promotions h2 {
-  align-self: center;
   @include h2-desktop;
+  align-self: center;
   margin-bottom: 50px;
 }
 
@@ -94,6 +94,7 @@
 .promotions__item--main h3 {
   display: flex;
   flex-direction: column;
+  font-size: $font-size-desktop-l2;
 }
 
 .promotions__item--main b {
@@ -104,6 +105,8 @@
 
 .promotions__item--main a {
   border-color: $second-color;
+  font-size: $font-size-desktop-s;
+  color: $second-color;
 }
 
 .promotions__item-left {
@@ -121,6 +124,8 @@
 
 .promotions__item--main p {
   width: 84%;
+  line-height: $line-height-m;
+  font-size: $font-size-desktop-mm;
 }
 
 .promotions__item-right {
@@ -131,20 +136,6 @@
   background-position: 0 0;
 }
 
-.promotions__item--main h3 {
-  font-size: $font-size-desktop-l2;
-}
-
-.promotions__item--main p {
-  line-height: $line-height-m;
-  font-size: $font-size-desktop-mm;
-}
-
-.promotions__item--main a {
-  font-size: $font-size-desktop-s;
-  color: $second-color;
-}
-
 @media (max-width: $tablet-full-width) {
   .promotions {
     padding-left: 5.9%;
@@ -153,6 +144,7 @@
   }
 
   .promotions h2 {
+    @include h2-tablet;
     margin-bottom: 39px;
   }
 
@@ -195,10 +187,6 @@
     background-image: url("../img/fit-girl-tablet@1x.jpg");
   }
 
-  .promotions h2 {
-    @include h2-tablet;
-  }
-
   .promotions__first-br {
     display: block;
   }
@@ -212,6 +200,7 @@
   }
 
   .promotions h2 {
+    @include h2-mobile;
     margin-bottom: 41px;
   }
 
@@ -238,9 +227,9 @@
   }
 
   .promotions__top {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .promotions__item p {
@@ -266,9 +255,5 @@
 
   .promotions__bottom {
     text-align: center;
-  }
-
-  .promotions h2 {
-    @include h2-mobile;
   }
 }

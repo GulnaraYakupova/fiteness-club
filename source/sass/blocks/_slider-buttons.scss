@@ -1,10 +1,8 @@
 .slider-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: -184px;
-  margin-bottom: 184px;
-  padding-left: 3.4%;
-  padding-right: 3.4%;
+  position: absolute;
+  width: 100%;
 }
 
 .slider-buttons__button {

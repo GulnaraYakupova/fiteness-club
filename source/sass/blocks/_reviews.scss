@@ -1,19 +1,40 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  padding-left: 25.5%;
+  padding-right: 25.5%;
+  position: relative;
+}
+
 .reviews h2 {
   @include h2-desktop;
+  margin-bottom: 50px;
 }
 
 .reviews__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 83.7%;
+  box-shadow: 0 0 40px $shadow-color;
 }
 
 .reviews blockquote {
   margin: 0;
+  margin-bottom: -39px;
   padding: 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .reviews cite {
+  display: block;
+  margin-bottom: 13px;
   font-style: normal;
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-ml;
@@ -22,11 +43,33 @@
 .reviews p {
   margin: 0;
   padding: 0;
+  font-weight: $font-weight-regular;
+  line-height: 1.4;
 }
 
 .reviews__item {
   color: $second-color;
   background-color: $accent-background-3;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-bottom: 0;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+.reviews__photo {
+  width: 25%;
+  height: 83%;
+  margin-right: 8%;
+}
+
+
+.reviews img {
+  width: 100%;
+  height: auto;
+  margin-top: 7px;
+  border-radius: 50%;
 }
 
 .reviews__item--hidden {
@@ -34,13 +77,88 @@
 }
 
 @media (max-width: $tablet-full-width) {
+  .reviews {
+    padding-top: 61px;
+    padding-left: 5.7%;
+    padding-right: 5.7%;
+    padding-bottom: 100px;
+  }
+
+  .reviews__list {
+    width: 83.2%;
+  }
+
+  .reviews p {
+    width: 99%;
+    line-height: 1.44;
+  }
+
   .reviews h2 {
     @include h2-tablet;
+    margin-bottom: 39px;
+  }
+
+  .reviews__item {
+    padding-bottom: 55px;
+    padding-top: 41px;
+  }
+
+  .reviews cite {
+    margin-bottom: 11px;
+  }
+
+  .reviews blockquote {
+    margin-bottom: -109px;
+  }
+
+  .reviews__photo img {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
   .reviews h2 {
     @include h2-mobile;
+    margin-bottom: 42px;
+  }
+
+  .reviews__list {
+    width: 80%;
+  }
+
+  .reviews__item {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 32px;
+  }
+
+  .reviews blockquote {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: -24px;
+  }
+
+  .reviews cite {
+    width: 40%;
+    padding-top: 14px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+  }
+
+  .reviews p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .reviews__photo {
+    height: auto;
+    width: 41%;
+    padding-top: 0;
+    padding-left: 12px;
   }
 }
