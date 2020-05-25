@@ -25,11 +25,12 @@
   font-size: $font-size-desktop-ml;
   color: $accent-color-1;
   border-bottom: 2px solid transparent;
+  outline: none;
 }
 
 .controls__button:hover,
 .controls__button:focus {
-  color: $border-color-2;
+  color: $border-color-3;
 }
 
 .controls__button:active {
@@ -38,7 +39,7 @@
 
 .controls__button--active {
   color: $main-color;
-  border-color: $border-color-2;
+  border-color: $border-color-3;
 }
 
 .controls__button--active:hover,

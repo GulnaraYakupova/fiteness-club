@@ -1,15 +1,42 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+var togglesBlock = document.querySelector('.controls');
+var toggles = document.querySelectorAll('.controls__button');
+var planes = document.querySelectorAll('.planes__list');
+var firstPlan = document.querySelector('.planes__list--first');
+var secondPlan = document.querySelector('.planes__list--second');
+var thirdPlan = document.querySelector('.planes__list--third');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+
+var togglesMap = {
+  first: 'controls__button--first',
+  second: 'controls__button--second',
+  third: 'controls__button--third',
+};
+
+togglesBlock.addEventListener('click', function (evt) {
+  if (!evt.target.closest('button').classList.contains('controls__button--active')) {
+    toggles.forEach(function (toggle) {
+      if (toggle.classList.contains('controls__button--active')) {
+        toggle.classList.remove('controls__button--active');
+      }
+    });
+
+    var toggleButton = evt.target.closest('button');
+    toggleButton.classList.add('controls__button--active');
+
+    planes.forEach(function (plan) {
+      if (plan.classList.contains('planes__list--shown')) {
+        plan.classList.remove('planes__list--shown');
+      }
+    });
+
+    if (toggleButton.classList.contains(togglesMap.first)) {
+      firstPlan.classList.add('planes__list--shown');
+    } else if (toggleButton.classList.contains(togglesMap.second)) {
+      secondPlan.classList.add('planes__list--shown');
+    } else if (toggleButton.classList.contains(togglesMap.third)) {
+      thirdPlan.classList.add('planes__list--shown');
+    }
   }
 });

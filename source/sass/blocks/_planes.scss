@@ -7,12 +7,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
-.planes__list--hidden {
-  display: none;
+.planes__list--shown {
+  display: flex;
 }
 
 .planes h3 {
@@ -67,7 +67,7 @@
 }
 
 .planes__item:hover {
-  border-image: linear-gradient(to right bottom, $border-color-2, $gradient-color-3) 30;
+  border-image: linear-gradient(to right bottom, $border-color-3, $gradient-color-3) 30;
 }
 
 .planes__button {
