@@ -2,8 +2,24 @@
   display: flex;
 }
 
-@media (max-width: $mobile-full-width) {
+.page-main__application {
+  width: 50%;
+}
+
+.page-main__contacts {
+  width: 50%;
+}
+
+@media (max-width: $tablet-full-width) {
   .page-main__bottom-block {
     flex-direction: column;
+  }
+
+  .page-main__application {
+    width: 100%;
+  }
+
+  .page-main__contacts {
+    width: 100%;
   }
 }

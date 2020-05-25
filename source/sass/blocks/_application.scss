@@ -1,10 +1,63 @@
 .application {
   color: $second-color;
   background-color: $accent-background-3;
+  box-sizing: border-box;
+  padding-left: 7.4%;
+  padding-right: 12.4%;
+  padding-top: 70px;
+  padding-bottom: 42px;
+}
+
+.application__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application__form input {
+  width: 45.8%;
+  padding-top: 22px;
+  color: $second-color;
+  background: transparent;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid $border-color-4;
+}
+
+.application__form input::-webkit-input-placeholder {
+  color: $second-color;
+}
+
+.application__form input::-moz-placeholder {
+  color: $second-color;
+}
+
+.application__form input:-moz-placeholder {
+  color: $second-color;
+}
+
+.application__form input:-ms-input-placeholder {
+  color: $second-color;
+}
+
+.application__form input:placeholder {
+  color: $second-color;
+}
+
+.application__button {
+  width: 99%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-size: $font-size-desktop-s;
 }
 
 .application h2 {
   @include h2-desktop;
+  letter-spacing: 1.8px;
+  margin-bottom: 19px;
 }
 
 .application input {
@@ -12,18 +65,46 @@
   font-size: $font-size-desktop-s;
 }
 
-.application__button {
-  font-size: $font-size-desktop-s;
-}
-
 @media (max-width: $tablet-full-width) {
+  .application {
+    padding-left: 17.3%;
+    padding-right: 21.3%;
+    padding-bottom: 40px;
+  }
+
   .application h2 {
     @include h2-tablet;
+    margin-bottom: 14px;
+  }
+
+  .application input {
+    width: 43.3%;
   }
 }
 
 @media (max-width: $mobile-full-width) {
+  .application {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 42px;
+  }
+
   .application h2 {
     @include h2-mobile;
+    margin-bottom: 17px;
+  }
+
+  .application__form {
+    flex-direction: column;
+  }
+
+  .application input {
+    width: 100%;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+  }
+
+  .application__button {
+    margin-top: 27px;
   }
 }
