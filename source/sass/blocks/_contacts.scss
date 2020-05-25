@@ -1,7 +1,7 @@
 .contacts {
   box-sizing: border-box;
   padding-left: 8.8%;
-  padding-right: 3.7%;
+  padding-right: 8.8%;
   padding-top: 71px;
   padding-bottom: 37px;
   border-top: 1px solid $border-color-4;
@@ -27,7 +27,7 @@
 .contacts__list::before {
   content: "";
   position: absolute;
-  left: 45%;
+  left: 52.5%;
   top: 5px;
   width: 1px;
   height: 102px;
@@ -36,7 +36,8 @@
 
 .contacts__list li {
   margin-bottom: 15px;
-  width: 50%;
+  margin-right: 28%;
+  width: auto;
 }
 
 .contacts h3 {
@@ -78,7 +79,7 @@
 @media (max-width: $tablet-full-width) {
   .contacts {
     padding-left: 17.4%;
-    padding-right: 1.4%;
+    padding-right: 17.4%;
   }
 
   .contacts h2 {
@@ -108,12 +109,14 @@
   }
 
   .contacts__list::before {
-    left: 42.5%;
+    left: 53%;
     top: 8px;
     height: 129px;
   }
 
   .contacts li {
+    width: auto;
+    margin-right: 20%;
     margin-bottom: 23px;
   }
 }
