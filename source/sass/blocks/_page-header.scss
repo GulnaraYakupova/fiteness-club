@@ -40,6 +40,15 @@
   opacity: 0.3;
 }
 
+a.page-header__logo:hover,
+a.page-header__logo:focus {
+  opacity: 1;
+}
+
+a.page-header__logo:active {
+  opacity: 1;
+}
+
 @media (max-width: $tablet-full-width) {
   .page-header {
     padding-left: 5.9%;

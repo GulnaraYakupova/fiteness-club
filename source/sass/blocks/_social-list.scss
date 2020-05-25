@@ -3,4 +3,25 @@
   padding: 0;
   list-style: none;
   display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: $mobile-full-width) {
+  .social-list__item--vk svg {
+    width: 32px;
+    height: 17px;
+  }
+
+  .social-list__item--insta svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .social-list__item--fb svg {
+    width: 14px;
+    height: 27px;
+  }
 }

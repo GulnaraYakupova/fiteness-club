@@ -14,7 +14,7 @@
   <div style="display:none">
     <include src="build/img/sprite_auto.svg">
   </div>
-  <header class="page-header">
+  <header class="page-header" id="header">
     <h1 class="visually-hidden">SUPERGYM - Фитнес центр в Омске</h1>
     <ul class="page-header__top-list">
       <li class="page-header__list-item">
@@ -552,8 +552,8 @@
   <footer class="page-footer">
     <nav class="page-footer__navigation page-navigation">
       <ul class="page-navigation__list">
-        <li class="page-navigation__list-item">
-          <a class="page-footer__logo">
+        <li class="page-navigation__list-item page-navigation__list-item--logo">
+          <a href="#header" class="page-footer__logo">
             <svg width="89" height="20" fill="none">
               <use xlink:href="#icon-logo"></use>
             </svg>
@@ -578,19 +578,19 @@
       </ul>
     </nav>
     <ul class="page-footer__social social-list">
-      <li class="social-list__item"><a href="#">
+      <li class="social-list__item social-list__item--vk"><a href="#">
           <svg width="24" height="13" fill="none">
             <use xlink:href="#icon-vk"></use>
           </svg>
           <span class="visually-hidden">Страница Supergym во Вконтакте</span></a>
       </li>
-      <li class="social-list__item"><a href="#">
+      <li class="social-list__item social-list__item--insta"><a href="#">
           <svg width="24" height="24" fill="none">
             <use xlink:href="#icon-insta"></use>
           </svg>
           <span class="visually-hidden">Страница Supergym в Инстаграм</span></a>
       </li>
-      <li class="social-list__item"><a href="#">
+      <li class="social-list__item social-list__item--fb"><a href="#">
           <svg width="12" height="24" fill="none">
             <use xlink:href="#icon-fb"></use>
           </svg>
