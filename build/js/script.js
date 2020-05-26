@@ -1,6 +1,6 @@
 'use strict';
 
-//для табов
+// для табов
 var togglesBlock = document.querySelector('.controls');
 var toggles = document.querySelectorAll('.controls__button');
 var planes = document.querySelectorAll('.planes__list');
@@ -14,20 +14,19 @@ var togglesMap = {
   third: 'controls__button--third',
 };
 
-//для валидации телофона
+// для валидации телофона
 var phoneField = document.querySelector('#phone');
 
-//для слайдера отзывов
+// для слайдера отзывов
 var reviewsPrevButton = document.querySelector('#reviews-prev');
 var reviewsNextButton = document.querySelector('#reviews-next');
 var reviews = document.querySelectorAll('.reviews__item');
 var reviewsStep = 1;
 
-//для слайдера тренеров
+// для слайдера тренеров
 var trainersPrevButton = document.querySelector('#trainers-prev');
 var trainersNextButton = document.querySelector('#trainers-next');
 var trainers = Array.from(document.querySelectorAll('.trainers__list-item'));
-var trainersSliderStep = 4;
 
 var clientWidthMap = {
   desktop: 1200,
@@ -42,13 +41,11 @@ var trainersStepMap = {
 };
 
 
-//валидаци номера телефона
-
+// валидаци номера телефона
 window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00'});
 
 
-//переключение табов в блоке Абонементы
-
+// переключение табов в блоке Абонементы
 togglesBlock.addEventListener('click', function (evt) {
   if (!evt.target.closest('button').classList.contains('controls__button--active')) {
     toggles.forEach(function (toggle) {
@@ -77,8 +74,7 @@ togglesBlock.addEventListener('click', function (evt) {
 });
 
 
-//работа слайдера в блоке отзывы
-
+// работа слайдера в блоке Отзывы
 if (reviewsNextButton && reviews) {
   reviewsNextButton.addEventListener('click', function () {
     var currentIndex = Array.from(reviews).findIndex(function (review) {
@@ -116,8 +112,7 @@ if (reviewsPrevButton && reviews) {
 }
 
 
-//работа слайдера в блоке Тренеры
-
+// работа слайдера в блоке Тренеры
 var getSliderStep = function () {
   var clientWidth = document.body.clientWidth;
   if (clientWidth >= clientWidthMap.desktop) {
@@ -253,4 +248,3 @@ trainersPrevButton.addEventListener('click', function () {
     }
   });
 });
-

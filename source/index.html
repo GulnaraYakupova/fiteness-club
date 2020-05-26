@@ -60,15 +60,27 @@
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
-        <img src="img/gym-desktop@1x.jpg" width="660" height="404" alt="Фото тренажерного зала">
+
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
+
+          <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="404"alt="Фото тренажерного зала">
+        </picture>
       </div>
       <div class="gym-info__video-block">
-        <img class="gym-info__video-poster" width="364" height="228" src="img/video-poster@1x.jpg"
-          alt="видео из тренажерного зала">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/video-poster-mobile@1x.webp 1x, img/video-poster-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/video-poster-tablet@1x.webp 1x, img/video-poster-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-poster@1x.webp 1x, img/video-poster@2x.webp 2x">
+
+          <img class="gym-info__video-poster" src="img/video-poster@1x.jpg" srcset="img/video-poster@2x.jpg 2x" width="364" height="228" alt="видео из тренажерного зала">
+        </picture>
         <video class="gym-info__video" poster="img/video-poster@1x.jpg" width="364" height="228">
-          <source src="video/sample.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
-        <button class="gym-info__video-button"></button>
+        <button class="gym-info__button" type="button"><span class="visually-hidden">Запустить видео</span></button>
       </div>
     </section>
     <section class="subscriptions" id="subscriptions">
@@ -206,7 +218,10 @@
       <h2>Тренеры</h2>
       <ul class="trainers__list">
         <li class="trainers__list-item">
-          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
+            <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+          </picture>
           <div class="trainers__info">
             <h3>Анна Павлова</h3>
             <div class="trainers__info-hide">
@@ -219,7 +234,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+          </picture>
           <div class="trainers__info">
             <h3>Алеексей Лавров</h3>
             <div class="trainers__info-hide">
@@ -233,7 +251,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
             <div class="trainers__info-hide">
@@ -247,7 +268,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
+            <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
             <div class="trainers__info-hide">
@@ -263,7 +287,10 @@
 
         <!--Повторы для демонстрации работы слайдера-->
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
+            <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+          </picture>
           <div class="trainers__info">
             <h3>Анна Павлова</h3>
             <div class="trainers__info-hide">
@@ -276,7 +303,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
             <div class="trainers__info-hide">
@@ -290,7 +320,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
+            <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
             <div class="trainers__info-hide">
@@ -304,7 +337,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+          </picture>
           <div class="trainers__info">
             <h3>Алеексей Лавров</h3>
             <div class="trainers__info-hide">
@@ -318,7 +354,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
+            <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
             <div class="trainers__info-hide">
@@ -332,7 +371,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
+            <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+          </picture>
           <div class="trainers__info">
             <h3>Анна Павлова</h3>
             <div class="trainers__info-hide">
@@ -345,7 +387,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+          </picture>
           <div class="trainers__info">
             <h3>Алеексей Лавров</h3>
             <div class="trainers__info-hide">
@@ -359,7 +404,10 @@
           </div>
         </li>
         <li class="trainers__list-item trainers__list-item--hidden trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
-          <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
+          <picture>
+            <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+          </picture>
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
             <div class="trainers__info-hide">
@@ -473,7 +521,10 @@
         <li class="reviews__item reviews__item--active">
           <blockquote>
             <div class="reviews__photo">
-              <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              <picture>
+                <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              </picture>
             </div>
             <cite>Анна Орлова</cite>
             <p>«Хожу в SuperClub уже больше года.
@@ -486,7 +537,10 @@
         <li class="reviews__item reviews__item--hidden">
           <blockquote>
             <div class="reviews__photo">
-              <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              <picture>
+                <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              </picture>
             </div>
             <cite>Лена Попова</cite>
             <p>«Любимый фитнес клуб в Омске»</p>
@@ -495,7 +549,10 @@
         <li class="reviews__item reviews__item--hidden">
           <blockquote>
             <div class="reviews__photo">
-              <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              <picture>
+                <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+              </picture>
             </div>
             <cite>Сергей Дуров</cite>
             <p>«Хожу в SuperClub уже больше года.
