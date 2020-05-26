@@ -514,7 +514,7 @@
     <section class="reviews">
       <h2>Отзывы</h2>
       <ul class="reviews__list">
-        <li class="reviews__item">
+        <li class="reviews__item reviews__item--active">
           <blockquote>
             <div class="reviews__photo">
               <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
@@ -528,15 +528,19 @@
 
         <!--Для демонстрации работы слайдера-->
         <li class="reviews__item reviews__item--hidden">
-          <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Лена Попова, клиентка Фитнес клуба">
           <blockquote>
+            <div class="reviews__photo">
+              <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+            </div>
             <cite>Лена Попова</cite>
             <p>«Любимый фитнес клуб в Омске»</p>
           </blockquote>
         </li>
         <li class="reviews__item reviews__item--hidden">
-          <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Сергей Дуров, клиент Фитнес клуба">
           <blockquote>
+            <div class="reviews__photo">
+              <img src="img/client-anna-orlova@1x.jpg" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
+            </div>
             <cite>Сергей Дуров</cite>
             <p>«Хожу в SuperClub уже больше года.
               Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
@@ -545,12 +549,12 @@
         </li>
       </ul>
       <div class="reviews__buttons slider-buttons">
-        <button class="slider-buttons__button slider-buttons__button--prev">
+        <button class="slider-buttons__button slider-buttons__button--prev" id="reviews-prev">
           <svg width="16" height="32" fill="none">
             <use xlink:href="#icon-arrow-left"></use>
           </svg>
           <span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__button slider-buttons__button--prev">
+        <button class="slider-buttons__button slider-buttons__button--prev" id="reviews-next">
           <svg width="16" height="32" fill="none">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>

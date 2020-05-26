@@ -76,6 +76,10 @@
   display: none;
 }
 
+.reviews__item--active {
+  display: flex;
+}
+
 @media (max-width: $tablet-full-width) {
   .reviews {
     padding-top: 61px;

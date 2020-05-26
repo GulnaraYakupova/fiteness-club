@@ -6,27 +6,15 @@ var planes = document.querySelectorAll('.planes__list');
 var firstPlan = document.querySelector('.planes__list--first');
 var secondPlan = document.querySelector('.planes__list--second');
 var thirdPlan = document.querySelector('.planes__list--third');
+
 var phoneField = document.querySelector('#phone');
 
+var reviewsPrevButton = document.querySelector('#reviews-prev');
+var reviewsNextButton = document.querySelector('#reviews-next');
+var reviews = document.querySelectorAll('.reviews__item');
+var reviewsStep = 1;
+
 window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00'});
-// window.swiper('.swiper-container', {
-//   direction: 'vertical',
-//   loop: true,
-
-// });
-
-window.onload = function () {
-  //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-};
 
 var togglesMap = {
   first: 'controls__button--first',
@@ -61,3 +49,38 @@ togglesBlock.addEventListener('click', function (evt) {
   }
 });
 
+if (reviewsNextButton && reviews) {
+  reviewsNextButton.addEventListener('click', function () {
+    var currentIndex = Array.from(reviews).findIndex(function (review) {
+      return review.classList.contains('reviews__item--active');
+    });
+    reviews[currentIndex].classList.remove('reviews__item--active');
+    reviews[currentIndex].classList.add('reviews__item--hidden');
+
+    if (currentIndex < reviews.length - 1) {
+      reviews[currentIndex + reviewsStep].classList.remove('reviews__item--hidden');
+      reviews[currentIndex + reviewsStep].classList.add('reviews__item--active');
+    } else {
+      reviews[0].classList.remove('reviews__item--hidden');
+      reviews[0].classList.add('reviews__item--active');
+    }
+  });
+}
+
+if (reviewsPrevButton && reviews) {
+  reviewsPrevButton.addEventListener('click', function () {
+    var currentIndex = Array.from(reviews).findIndex(function (review) {
+      return review.classList.contains('reviews__item--active');
+    });
+    reviews[currentIndex].classList.remove('reviews__item--active');
+    reviews[currentIndex].classList.add('reviews__item--hidden');
+
+    if (currentIndex > 0) {
+      reviews[currentIndex - reviewsStep].classList.remove('reviews__item--hidden');
+      reviews[currentIndex - reviewsStep].classList.add('reviews__item--active');
+    } else {
+      reviews[reviews.length - 1].classList.remove('reviews__item--hidden');
+      reviews[reviews.length - 1].classList.add('reviews__item--active');
+    }
+  });
+}
