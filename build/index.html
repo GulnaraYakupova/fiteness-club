@@ -276,7 +276,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--tablet-hidden">
+        <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
@@ -290,7 +290,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--tablet-hidden">
+        <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
@@ -306,7 +306,20 @@
         </li>
 
         <!--Повторы для демонстрации работы слайдера-->
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
+          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
+          <div class="trainers__info">
+            <h3>Анна Павлова</h3>
+            <div class="trainers__info-hide">
+              <p>Yoga</p>
+              <ul class="trainers__achievs-list">
+                <li class="trainers__achievs-item">Certified Trainer</li>
+                <li class="trainers__achievs-item">Опыт — 3 года</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
@@ -320,7 +333,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
@@ -334,20 +347,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
-          <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
-          <div class="trainers__info">
-            <h3>Анна Павлова</h3>
-            <div class="trainers__info-hide">
-              <p>Yoga</p>
-              <ul class="trainers__achievs-list">
-                <li class="trainers__achievs-item">Certified Trainer</li>
-                <li class="trainers__achievs-item">Опыт — 3 года</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
           <div class="trainers__info">
             <h3>Алеексей Лавров</h3>
@@ -361,7 +361,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-mary-ketova@1x.jpg" width="260" height="294" alt="Мария Кетова">
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
@@ -375,7 +375,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-anna-pavlova@1x.jpg" width="260" height="294" alt="Анна Павлова">
           <div class="trainers__info">
             <h3>Анна Павлова</h3>
@@ -388,7 +388,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-alex-lavrow@1x.jpg" width="260" height="294" alt="Алексей Лавров">
           <div class="trainers__info">
             <h3>Алеексей Лавров</h3>
@@ -402,7 +402,7 @@
             </div>
           </div>
         </li>
-        <li class="trainers__list-item trainers__list-item--hidden">
+        <li class="trainers__list-item trainers__list-item--hidden trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <img src="img/trainer-alex-pashkov@1x.jpg" width="260" height="294" alt="Александр Пашков">
           <div class="trainers__info">
             <h3>Александр Пашков</h3>
@@ -418,12 +418,12 @@
         </li>
       </ul>
       <div class="trainers__buttons slider-buttons">
-        <button class="slider-buttons__button slider-buttons__button--prev">
+        <button class="slider-buttons__button slider-buttons__button--prev" id="trainers-prev">
           <svg width="16" height="32" fill="none">
             <use xlink:href="#icon-arrow-left"></use>
           </svg>
           <span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__button slider-buttons__button--prev">
+        <button class="slider-buttons__button slider-buttons__button--next" id="trainers-next">
           <svg width="16" height="32" fill="none">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>
