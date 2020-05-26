@@ -22,7 +22,8 @@
     "pixel-glass": "1.0.13",
     "posthtml-include": "1.4.3",
     "stylelint": "13.3.3",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "0.1.4",
+    "swiper": "5.4.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

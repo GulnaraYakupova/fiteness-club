@@ -6,7 +6,9 @@ var planes = document.querySelectorAll('.planes__list');
 var firstPlan = document.querySelector('.planes__list--first');
 var secondPlan = document.querySelector('.planes__list--second');
 var thirdPlan = document.querySelector('.planes__list--third');
+var phoneField = document.querySelector('#phone');
 
+window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00'});
 
 var togglesMap = {
   first: 'controls__button--first',
@@ -40,3 +42,4 @@ togglesBlock.addEventListener('click', function (evt) {
     }
   }
 });
+
