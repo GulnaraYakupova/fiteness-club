@@ -97,8 +97,8 @@
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xxll;
   background: linear-gradient(to right bottom, $gradient-color-5, $gradient-color-4) $gradient-color-5;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .features__value span {

@@ -57,9 +57,9 @@ togglesBlock.addEventListener('click', function (evt) {
     var toggleButton = evt.target.closest('button');
     toggleButton.classList.add('controls__button--active');
 
-    for (var j = 0; j < planes.length; i++) {
-      if (planes[i].classList.contains('planes__list--shown')) {
-        planes[i].classList.remove('planes__list--shown');
+    for (var j = 0; j < planes.length; j++) {
+      if (planes[j].classList.contains('planes__list--shown')) {
+        planes[j].classList.remove('planes__list--shown');
       }
     }
 
