@@ -26,7 +26,7 @@ var reviewsStep = 1;
 // для слайдера тренеров
 var trainersPrevButton = document.querySelector('#trainers-prev');
 var trainersNextButton = document.querySelector('#trainers-next');
-var trainers = Array.from(document.querySelectorAll('.trainers__list-item'));
+var trainers = Array.prototype.slice.call(document.querySelectorAll('.trainers__list-item'));
 
 var clientWidthMap = {
   desktop: 1200,

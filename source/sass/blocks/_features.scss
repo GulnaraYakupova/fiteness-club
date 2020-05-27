@@ -82,21 +82,23 @@
 }
 
 .features__title {
+  display: block;
   width: 56%;
   margin-top: 6px;
   margin-bottom: 5px;
 }
 
 .features__info {
+  display: block;
   width: 56%;
 }
 
 .features__value b {
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xxll;
-  background-image: linear-gradient(to right bottom, $gradient-color-5, $gradient-color-4);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right bottom, $gradient-color-5, $gradient-color-4) $gradient-color-5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .features__value span {
@@ -117,6 +119,7 @@ tr.features__block--main {
   left: 38.6%;
   color: $second-color;
   background-color: $accent-background-3;
+  -webkit-text-fill-color: $second-color;
 }
 
 tr.features__block--main .features__value {

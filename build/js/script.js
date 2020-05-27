@@ -26,7 +26,7 @@ var reviewsStep = 1;
 // для слайдера тренеров
 var trainersPrevButton = document.querySelector('#trainers-prev');
 var trainersNextButton = document.querySelector('#trainers-next');
-var trainers = Array.from(document.querySelectorAll('.trainers__list-item'));
+var trainers = Array.prototype.slice.call(document.querySelectorAll('.trainers__list-item'));
 
 var clientWidthMap = {
   desktop: 1200,
@@ -45,6 +45,7 @@ window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
 
 
 // переключение табов в блоке Абонементы
+
 togglesBlock.addEventListener('click', function (evt) {
   if (!evt.target.closest('button').classList.contains('controls__button--active')) {
     for (var i = 0; i < toggles.length; i++) {
@@ -56,7 +57,7 @@ togglesBlock.addEventListener('click', function (evt) {
     var toggleButton = evt.target.closest('button');
     toggleButton.classList.add('controls__button--active');
 
-    for (var i = 0; i < planes.length; i++) {
+    for (var j = 0; j < planes.length; i++) {
       if (planes[i].classList.contains('planes__list--shown')) {
         planes[i].classList.remove('planes__list--shown');
       }
