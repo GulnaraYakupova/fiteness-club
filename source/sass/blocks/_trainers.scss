@@ -58,7 +58,6 @@
   padding-bottom: 23px;
   line-height: 1;
   color: $second-color;
-  // background-color: $overlay-color;
 }
 
 .trainers__info-hide {
@@ -126,8 +125,9 @@
 }
 
 .trainers__buttons {
-  width: 10%;
   top: 53%;
+  left: 3.4%;
+  width: 93.2%;
 }
 
 @media (max-width: $tablet-full-width) {
@@ -166,8 +166,9 @@
   }
 
   .trainers__buttons {
-    width: 88%;
-    top: 51.5%;
+    width: 88.5%;
+    top: 51.6%;
+    left: 5.9%;
   }
 }
 
@@ -214,5 +215,6 @@
   .trainers__buttons {
     width: 91%;
     top: 52.5%;
+    left: 4.7%;
   }
 }
