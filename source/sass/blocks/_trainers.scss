@@ -6,24 +6,24 @@
   align-items: center;
   margin: 0 auto;
   position: relative;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 
 .trainers h2 {
   @include h2-desktop;
   margin-bottom: 50px;
-  padding-left: 7.55%;
-  padding-right: 7.55%;
   align-self: flex-start;
 }
 
 .trainers__list {
   margin: 0;
   padding: 0;
-  width: 1160px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .trainers__list-item {
@@ -125,6 +125,11 @@
   height: 294px;
 }
 
+.trainers__buttons {
+  width: 93%;
+  top: 53%;
+}
+
 @media (max-width: $tablet-full-width) {
   .trainers {
     padding-top: 71px;
@@ -133,7 +138,7 @@
 
   .trainers h2 {
     @include h2-tablet;
-    align-items: center;
+    align-self: center;
     margin-bottom: 39px;
   }
 
@@ -158,6 +163,11 @@
 
   .trainers__list-item--tablet-hidden {
     display: none;
+  }
+
+  .trainers__buttons {
+    width: 88%;
+    top: 51.5%;
   }
 }
 
@@ -189,5 +199,10 @@
 
   .trainers__info {
     width: 226px;
+  }
+
+  .trainers__buttons {
+    width: 91%;
+    top: 52.5%;
   }
 }
