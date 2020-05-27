@@ -139,16 +139,31 @@ var getScreenSize = function () {
 };
 
 trainersNextButton.addEventListener('click', function () {
+  var firstIndex = 0;
+  var screenSize = getScreenSize();
 
-  var firstIndex = trainers.findIndex(function (trainerNode) {
-    var screenSize = getScreenSize();
-    if (screenSize >= clientWidthMap.desktop) {
-      return !trainerNode.classList.contains('trainers__list-item--hidden');
-    } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
-      return !trainerNode.classList.contains('trainers__list-item--tablet-hidden');
+  if (screenSize >= clientWidthMap.desktop) {
+    for (var i = 0; i < trainers.length; i++) {
+      if (!trainers[i].classList.contains('trainers__list-item--hidden')) {
+        firstIndex = i;
+        break;
+      }
     }
-    return !trainerNode.classList.contains('trainers__list-item--mobile-hidden');
-  });
+  } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
+    for (var j = 0; j < trainers.length; j++) {
+      if (!trainers[j].classList.contains('trainers__list-item--tablet-hidden')) {
+        firstIndex = j;
+        break;
+      }
+    }
+  } else {
+    for (var k = 0; k < trainers.length; k++) {
+      if (!trainers[k].classList.contains('trainers__list-item--mobile-hidden')) {
+        firstIndex = k;
+        break;
+      }
+    }
+  }
 
   var itemsAmount = getSliderStep();
 
@@ -200,15 +215,31 @@ trainersNextButton.addEventListener('click', function () {
 });
 
 trainersPrevButton.addEventListener('click', function () {
-  var firstIndex = trainers.findIndex(function (trainerNode) {
-    var screenSize = getScreenSize();
-    if (screenSize >= clientWidthMap.desktop) {
-      return !trainerNode.classList.contains('trainers__list-item--hidden');
-    } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
-      return !trainerNode.classList.contains('trainers__list-item--tablet-hidden');
+  var firstIndex = 0;
+  var screenSize = getScreenSize();
+
+  if (screenSize >= clientWidthMap.desktop) {
+    for (var i = 0; i < trainers.length; i++) {
+      if (!trainers[i].classList.contains('trainers__list-item--hidden')) {
+        firstIndex = i;
+        break;
+      }
     }
-    return !trainerNode.classList.contains('trainers__list-item--mobile-hidden');
-  });
+  } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
+    for (var j = 0; j < trainers.length; j++) {
+      if (!trainers[j].classList.contains('trainers__list-item--tablet-hidden')) {
+        firstIndex = j;
+        break;
+      }
+    }
+  } else {
+    for (var k = 0; k < trainers.length; k++) {
+      if (!trainers[k].classList.contains('trainers__list-item--mobile-hidden')) {
+        firstIndex = k;
+        break;
+      }
+    }
+  }
 
   var itemsAmount = getSliderStep();
 
