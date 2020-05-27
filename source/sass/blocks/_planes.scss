@@ -52,7 +52,6 @@
 }
 
 .planes__item {
-  border: 7px solid transparent;
   width: 31%;
   box-sizing: border-box;
   background-color: $main-background-color;
@@ -64,14 +63,19 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 10;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to right bottom, $border-color-3, $gradient-color-3) 30;
+
 }
 
 .planes__item:hover {
+  border-color: $border-color-3;
   border-image: linear-gradient(to right bottom, $border-color-3, $gradient-color-3) 30;
 }
 
 .planes__button {
   padding: 24px 12%;
+  width: 58%;
 }
 
 @media (max-width: $tablet-full-width) {
@@ -91,7 +95,8 @@
   }
 
   .planes__button {
-    padding: 24px 10%;
+    padding: 24px 7%;
+    width: 48%;
   }
 }
 
