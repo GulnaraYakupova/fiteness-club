@@ -47,20 +47,20 @@ window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
 // переключение табов в блоке Абонементы
 togglesBlock.addEventListener('click', function (evt) {
   if (!evt.target.closest('button').classList.contains('controls__button--active')) {
-    toggles.forEach(function (toggle) {
-      if (toggle.classList.contains('controls__button--active')) {
-        toggle.classList.remove('controls__button--active');
+    for (var i = 0; i < toggles.length; i++) {
+      if (toggles[i].classList.contains('controls__button--active')) {
+        toggles[i].classList.remove('controls__button--active');
       }
-    });
+    }
 
     var toggleButton = evt.target.closest('button');
     toggleButton.classList.add('controls__button--active');
 
-    planes.forEach(function (plan) {
-      if (plan.classList.contains('planes__list--shown')) {
-        plan.classList.remove('planes__list--shown');
+    for (var i = 0; i < planes.length; i++) {
+      if (planes[i].classList.contains('planes__list--shown')) {
+        planes[i].classList.remove('planes__list--shown');
       }
-    });
+    }
 
     if (toggleButton.classList.contains(togglesMap.first)) {
       firstPlan.classList.add('planes__list--shown');
