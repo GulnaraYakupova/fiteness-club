@@ -585,7 +585,9 @@
           <label class="visually-hidden" for="name">Имя</label>
           <input type="text" name="name" id="name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="16" required>
+          <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="16" required
+          pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" aria-label="введите номер телефона"
+          >
           <button class="button button--contrast-1 application__button" type="submit">Отправить</button>
         </form>
       </section>
