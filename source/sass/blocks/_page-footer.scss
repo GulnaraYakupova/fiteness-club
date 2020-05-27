@@ -3,6 +3,7 @@
   background-color: $accent-background-4;
   display: flex;
   min-height: 108px;
+  height: 108px;
   align-items: center;
   justify-content: space-between;
   padding-left: 7.5%;
@@ -37,6 +38,7 @@
     padding-left: 5.9%;
     padding-right: 5.9%;
     min-height: 114px;
+    height: auto;
   }
 
   .page-footer__navigation {
