@@ -63,14 +63,14 @@
 
         <picture>
           <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
-
-          <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="404"alt="Фото тренажерного зала">
+          <!-- 1х: 660px; 2x: 1200px -->
+          <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="404" alt="Фото тренажерного зала">
         </picture>
       </div>
       <div class="gym-info__video-block">
         <picture>
           <source type="image/webp" srcset="img/video-poster@1x.webp 1x, img/video-poster@2x.webp 2x">
-
+            <!-- 1х: 364px; 2x: 728px -->
           <img class="gym-info__video-poster" src="img/video-poster@1x.jpg" srcset="img/video-poster@2x.jpg 2x" width="364" height="228" alt="видео из тренажерного зала">
         </picture>
         <video class="gym-info__video" poster="img/video-poster@1x.jpg" width="364" height="228">
@@ -83,9 +83,9 @@
       <div class="subscriptions__container">
         <h2>Абонементы</h2>
         <div class="subscriptions__controls controls">
-          <button class="controls__button controls__button--first controls__button--active">1 месяц</button>
-          <button class="controls__button controls__button--second">6 месяцев</button>
-          <button class="controls__button controls__button--third">12 месяцев</button>
+          <button type="button" class="controls__button controls__button--first controls__button--active">1 месяц</button>
+          <button type="button" class="controls__button controls__button--second">6 месяцев</button>
+          <button type="button" class="controls__button controls__button--third">12 месяцев</button>
         </div>
         <div class="subscriptions__planes planes">
           <ul class="planes__list planes__list--first planes__list--shown">
@@ -216,7 +216,8 @@
         <li class="trainers__list-item">
           <picture>
             <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
-            <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
           </picture>
           <div class="trainers__info">
             <h3>Анна Павлова</h3>
@@ -232,6 +233,7 @@
         <li class="trainers__list-item trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
           </picture>
           <div class="trainers__info">
@@ -249,6 +251,7 @@
         <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
@@ -266,7 +269,8 @@
         <li class="trainers__list-item trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
-            <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
             <h3>Мария Кетова</h3>
@@ -285,6 +289,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
           </picture>
           <div class="trainers__info">
@@ -301,6 +306,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
@@ -318,6 +324,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
@@ -335,6 +342,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
           </picture>
           <div class="trainers__info">
@@ -352,6 +360,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-mary-ketova@1x.webp 1x, img/trainer-mary-ketova@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-mary-ketova@1x.jpg" srcset="img/trainer-mary-ketova@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
@@ -369,6 +378,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-anna-pavlova@1x.webp 1x, img/trainer-anna-pavlova@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-anna-pavlova@1x.jpg" srcset="img/trainer-anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
           </picture>
           <div class="trainers__info">
@@ -385,6 +395,7 @@
         <li class="trainers__list-item trainers__list-item--hidden  trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-lavrow@1x.webp 1x, img/trainer-alex-lavrow@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-lavrow@1x.jpg" srcset="img/trainer-alex-lavrow@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
           </picture>
           <div class="trainers__info">
@@ -402,6 +413,7 @@
         <li class="trainers__list-item trainers__list-item--hidden trainers__list-item--tablet-hidden trainers__list-item--mobile-hidden">
           <picture>
             <source type="image/webp" srcset="img/trainer-alex-pashkov@1x.webp 1x, img/trainer-alex-pashkov@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 520px -->
             <img src="img/trainer-alex-pashkov@1x.jpg" srcset="img/trainer-alex-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
           </picture>
           <div class="trainers__info">
@@ -418,12 +430,12 @@
         </li>
       </ul>
       <div class="trainers__buttons slider-buttons">
-        <button class="slider-buttons__button slider-buttons__button--prev" id="trainers-prev">
+        <button type="button" class="slider-buttons__button slider-buttons__button--prev" id="trainers-prev">
           <svg width="16" height="32" fill="none" viewBox="0 0 16 32">
             <use xlink:href="#icon-arrow-left"></use>
           </svg>
           <span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__button slider-buttons__button--next" id="trainers-next">
+        <button type="button" class="slider-buttons__button slider-buttons__button--next" id="trainers-next">
           <svg width="16" height="32" fill="none" viewBox="0 0 16 32">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>
@@ -525,6 +537,7 @@
             <div class="reviews__photo">
               <picture>
                 <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <!-- 1х: 80px; 2x: 160px -->
                 <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
               </picture>
             </div>
@@ -539,6 +552,7 @@
             <div class="reviews__photo">
               <picture>
                 <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <!-- 1х: 80px; 2x: 160px -->
                 <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
               </picture>
             </div>
@@ -549,6 +563,7 @@
             <div class="reviews__photo">
               <picture>
                 <source type="image/webp" srcset="img/client-anna-orlova@1x.webp 1x, img/client-anna-orlova@2x.webp 2x">
+                <!-- 1х: 80px; 2x: 160px -->
                 <img src="img/client-anna-orlova@1x.jpg" srcset="img/client-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова, клиентка Фитнес клуба">
               </picture>
             </div>
@@ -562,12 +577,12 @@
         </li>
       </ul>
       <div class="reviews__buttons slider-buttons">
-        <button class="slider-buttons__button slider-buttons__button--prev" id="reviews-prev">
+        <button type="button" class="slider-buttons__button slider-buttons__button--prev" id="reviews-prev">
           <svg width="16" height="32" fill="none" viewBox="0 0 16 32">
             <use xlink:href="#icon-arrow-left"></use>
           </svg>
           <span class="visually-hidden">Показать предыдущих тренеров</span></button>
-        <button class="slider-buttons__button slider-buttons__button--next" id="reviews-next">
+        <button type="button" class="slider-buttons__button slider-buttons__button--next" id="reviews-next">
           <svg width="16" height="32" fill="none" viewBox="0 0 16 32">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>
@@ -616,7 +631,7 @@
     <nav class="page-footer__navigation page-navigation">
       <ul class="page-navigation__list">
         <li class="page-navigation__list-item page-navigation__list-item--logo">
-          <a href="#header" class="page-footer__logo">
+          <a class="page-footer__logo">
             <svg width="89" height="20" fill="none" viewBox="0 0 89 20">
               <use xlink:href="#icon-logo"></use>
             </svg>
