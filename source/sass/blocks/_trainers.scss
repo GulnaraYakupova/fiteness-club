@@ -120,6 +120,11 @@
   border-radius: 50%;
 }
 
+.trainers picture {
+  width: 260px;
+  height: 294px;
+}
+
 @media (max-width: $tablet-full-width) {
   .trainers {
     padding-top: 71px;
@@ -142,7 +147,13 @@
   }
 
   .trainers__list-item img {
-    width: 100%;
+    width: 268px;
+    height: 294px;
+  }
+
+  .trainers picture {
+    width: 268px;
+    height: 294px;
   }
 
   .trainers__list-item--tablet-hidden {

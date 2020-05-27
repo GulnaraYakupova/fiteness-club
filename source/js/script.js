@@ -40,9 +40,8 @@ var trainersStepMap = {
   mobile: 1,
 };
 
-
 // валидаци номера телефона
-window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00'});
+window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
 
 
 // переключение табов в блоке Абонементы
