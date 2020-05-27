@@ -20,7 +20,7 @@ var phoneField = document.querySelector('#phone');
 // для слайдера отзывов
 var reviewsPrevButton = document.querySelector('#reviews-prev');
 var reviewsNextButton = document.querySelector('#reviews-next');
-var reviews = document.querySelectorAll('.reviews__item');
+var reviews = Array.prototype.slice.call(document.querySelectorAll('.reviews__item'));
 var reviewsStep = 1;
 
 // для слайдера тренеров
@@ -77,9 +77,14 @@ togglesBlock.addEventListener('click', function (evt) {
 // работа слайдера в блоке Отзывы
 if (reviewsNextButton && reviews) {
   reviewsNextButton.addEventListener('click', function () {
-    var currentIndex = Array.from(reviews).findIndex(function (review) {
-      return review.classList.contains('reviews__item--active');
-    });
+    var currentIndex = 0;
+    for (var i = 0; i < reviews.length; i++) {
+      if (reviews[i].classList.contains('reviews__item--active')) {
+        currentIndex = i;
+        break;
+      }
+    }
+
     reviews[currentIndex].classList.remove('reviews__item--active');
     reviews[currentIndex].classList.add('reviews__item--hidden');
 
@@ -95,9 +100,14 @@ if (reviewsNextButton && reviews) {
 
 if (reviewsPrevButton && reviews) {
   reviewsPrevButton.addEventListener('click', function () {
-    var currentIndex = Array.from(reviews).findIndex(function (review) {
-      return review.classList.contains('reviews__item--active');
-    });
+    var currentIndex = 0;
+    for (var i = 0; i < reviews.length; i++) {
+      if (reviews[i].classList.contains('reviews__item--active')) {
+        currentIndex = i;
+        break;
+      }
+    }
+
     reviews[currentIndex].classList.remove('reviews__item--active');
     reviews[currentIndex].classList.add('reviews__item--hidden');
 
