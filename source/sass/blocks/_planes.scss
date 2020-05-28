@@ -42,7 +42,7 @@
 
 .planes b::before {
   content: attr(data-parent);
-  text-shadow: -20px -44px 0 $shadow-color;
+  text-shadow: -20px -44px 0 $shadow-color-2;
   color: transparent;
   position: absolute;
   top: 0;
