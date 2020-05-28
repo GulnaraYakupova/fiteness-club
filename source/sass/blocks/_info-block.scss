@@ -75,16 +75,20 @@
   margin-bottom: 40px;
 }
 
-.info-block__social-list li {
+.info-block__social-item {
   margin-top: 15px;
 }
 
-.info-block__social-list a:hover,
-.info-block__social-list a:focus {
+.info-block__social-link {
+  color: $second-color;
+}
+
+.info-block__social-link:hover,
+.info-block__social-link:focus {
   opacity: 0.7;
 }
 
-.info-block__social-list a:active {
+.info-block__social-link:active {
   opacity: 0.5;
 }
 

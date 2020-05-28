@@ -43,7 +43,7 @@
   font-weight: $font-weight-regular;
 }
 
-.promotions a {
+.promotions__link {
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-xs;
   color: $accent-background-3;
@@ -54,12 +54,12 @@
   display: inline-block;
 }
 
-.promotions a:hover,
-.promotions a:focus {
+.promotions__link:hover,
+.promotions__link:focus {
   opacity: 0.7;
 }
 
-.promotions a:active {
+.promotions__link:active {
   opacity: 0.5;
 }
 
@@ -107,7 +107,7 @@
   margin-bottom: 18px;
 }
 
-.promotions__item--main a {
+.promotions__item--main .promotions__link {
   border-color: $second-color;
   font-size: $font-size-desktop-s;
   color: $second-color;

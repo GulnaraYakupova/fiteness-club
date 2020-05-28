@@ -22,7 +22,7 @@
   line-height: $line-height-ss;
 }
 
-.page-header a {
+.page-header__item-link {
   color: $second-color;
 }
 
@@ -31,21 +31,21 @@
   height: 20px;
 }
 
-.page-header__top-list a:hover,
-.page-header__top-list a:focus {
+.page-header__item-link:hover,
+.page-header__item-link:focus {
   opacity: 0.7;
 }
 
-.page-header__top-list a:active {
+.page-header__item-link:active {
   opacity: 0.3;
 }
 
-a.page-header__logo:hover,
-a.page-header__logo:focus {
+.page-header__logo:hover,
+.page-header__logo:focus {
   opacity: 1;
 }
 
-a.page-header__logo:active {
+.page-header__logo:active {
   opacity: 1;
 }
 

@@ -16,6 +16,25 @@
   flex-grow: 1;
 }
 
+.page-navigation__link {
+  color: $second-color;
+}
+
+.page-navigation__link:hover,
+.page-navigation__link:focus {
+  opacity: 0.7;
+}
+
+.page-navigation__link:active {
+  opacity: 0.5;
+}
+
+.page-navigation__link--logo:hover,
+.page-navigation__link--logo:focus,
+.page-navigation__link--logo:active {
+  opacity: 1;
+}
+
 @media (max-width: $tablet-full-width) {
   .page-navigation__list-item {
     margin-right: 5.4%;

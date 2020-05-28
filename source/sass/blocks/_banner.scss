@@ -84,10 +84,6 @@
 }
 
 .banner__item p {
-  margin-bottom: 0;
-}
-
-p.banner__item-title {
   margin: 0;
   padding: 0;
   font-weight: $font-weight-regular;
@@ -164,7 +160,7 @@ p.banner__item-title {
     margin-bottom: 34px;
   }
 
-  p.banner__item-title {
+  .banner__item p {
     margin-bottom: 0;
     font-size: $font-size-tablet-s;
     padding-bottom: 0.5px;

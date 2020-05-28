@@ -19,13 +19,13 @@
     <h1 class="visually-hidden">SUPERGYM - Фитнес центр в Омске</h1>
     <ul class="page-header__top-list">
       <li class="page-header__list-item">
-        <a class="page-header__logo">
+        <a class="page-header__item-link page-header__logo">
           <svg width="89" height="20" fill="none" viewBox="0 0 89 20">
             <use xlink:href="#icon-logo"></use>
           </svg>
           <span class="visually-hidden">Логотип фитнес клуба SUPERGYM</span>
         </a></li>
-      <li class="page-header__list-item"><a href="tel:88005555555">8-800-555-55-55</a></li>
+      <li class="page-header__list-item"><a class="page-header__item-link" href="tel:88005555555">8-800-555-55-55</a></li>
     </ul>
     <section class="page-header__info info-block" id="services">
       <div class="info-block__text">
@@ -40,9 +40,9 @@
       </div>
       <div class="info-block__photo"></div>
       <ul class="info-block__social-list">
-        <li><a href="#">fb<span class="visually-hidden">Страница Supergym в Фейсбуке</span></a></li>
-        <li><a href="#">vk<span class="visually-hidden">Страница Supergym во Вконтакте</span></a></li>
-        <li><a href="#">ig<span class="visually-hidden">Страница Supergym в Инстаграм</span></a></li>
+        <li class="info-block__social-item"><a class="info-block__social-link" href="#">fb<span class="visually-hidden">Страница Supergym в Фейсбуке</span></a></li>
+        <li class="info-block__social-item"><a class="info-block__social-link" href="#">vk<span class="visually-hidden">Страница Supergym во Вконтакте</span></a></li>
+        <li class="info-block__social-item"><a class="info-block__social-link" href="#">ig<span class="visually-hidden">Страница Supergym в Инстаграм</span></a></li>
       </ul>
     </section>
   </header>
@@ -518,7 +518,7 @@
               <p>Приведи друга, получи <br class="promotions__first-br"> абонемент в подарок</p>
             </div>
             <div class="promotions__bottom">
-              <a href="#">Подробнее</a>
+              <a class="promotions__link" href="#">Подробнее</a>
             </div>
           </li>
           <li class="promotions__item promotions__item--additional">
@@ -527,7 +527,7 @@
               <p>Корпоративный фитнес с командой</p>
             </div>
             <div class="promotions__bottom">
-              <a href="#">Подробнее</a>
+              <a class="promotions__link" href="#">Подробнее</a>
             </div>
           </li>
         </ul>
@@ -606,23 +606,23 @@
       <section class="page-main__contacts contacts">
         <h2>Контакты</h2>
         <ul class="contacts__list">
-          <li>
+          <li class="contacts__item">
             <h3>Адрес:</h3>
-            <address>
+            <address class="contacts__info">
               г. Омск, ул. 60 лет Октября, 7
             </address>
           </li>
-          <li>
+          <li class="contacts__item">
             <h3>График работы:</h3>
-            <p>Пн-Вс: с 8:00 до 22:00</p>
+            <p class="contacts__info">Пн-Вс: с 8:00 до 22:00</p>
           </li>
-          <li>
+          <li class="contacts__item">
             <h3>Телефон:</h3>
-            <a href="tel:88005555555">8-800-555-55-55</a>
+            <a class="contacts__info" href="tel:88005555555">8-800-555-55-55</a>
           </li>
-          <li>
+          <li class="contacts__item">
             <h3>Email:</h3>
-            <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            <a class="contacts__info contacts__info--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
           </li>
         </ul>
       </section>
@@ -632,7 +632,7 @@
     <nav class="page-footer__navigation page-navigation">
       <ul class="page-navigation__list">
         <li class="page-navigation__list-item page-navigation__list-item--logo">
-          <a class="page-footer__logo">
+          <a class="page-navigation__link page-navigation__link--logo">
             <svg width="89" height="20" fill="none" viewBox="0 0 89 20">
               <use xlink:href="#icon-logo"></use>
             </svg>
@@ -640,36 +640,36 @@
           </a>
         </li>
         <li class="page-navigation__list-item">
-          <a href="#services">Услуги</a>
+          <a class="page-navigation__link" href="#services">Услуги</a>
         </li>
         <li class="page-navigation__list-item">
-          <a href="#subscriptions">Абонементы</a>
+          <a class="page-navigation__link" href="#subscriptions">Абонементы</a>
         </li>
         <li class="page-navigation__list-item">
-          <a href="#promotions">Акции</a>
+          <a class="page-navigation__link" href="#promotions">Акции</a>
         </li>
         <li class="page-navigation__list-item">
-          <a href="#trainers">Тренеры</a>
+          <a class="page-navigation__link" href="#trainers">Тренеры</a>
         </li>
         <li class="page-navigation__list-item">
-          <a href="#">Расписание</a>
+          <a class="page-navigation__link" href="#">Расписание</a>
         </li>
       </ul>
     </nav>
     <ul class="page-footer__social social-list">
-      <li class="social-list__item social-list__item--vk"><a href="#">
+      <li class="social-list__item social-list__item--vk"><a class="social-list__link" href="#">
           <svg width="24" height="13" fill="none" viewBox="0 0 24 13">
             <use xlink:href="#icon-vk"></use>
           </svg>
           <span class="visually-hidden">Страница Supergym во Вконтакте</span></a>
       </li>
-      <li class="social-list__item social-list__item--insta"><a href="#">
+      <li class="social-list__item social-list__item--insta"><a class="social-list__link" href="#">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
             <use xlink:href="#icon-insta"></use>
           </svg>
           <span class="visually-hidden">Страница Supergym в Инстаграм</span></a>
       </li>
-      <li class="social-list__item social-list__item--fb"><a href="#">
+      <li class="social-list__item social-list__item--fb"><a class="social-list__link" href="#">
           <svg width="12" height="24" fill="none" viewBox="0 0 12 24">
             <use xlink:href="#icon-fb"></use>
           </svg>
