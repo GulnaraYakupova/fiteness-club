@@ -31,7 +31,7 @@
   .page-navigation__list {
     font-size: $font-size-mobile-m;
     flex-direction: column;
-    height: 121px;
+    height: 120px;
   }
 
   .page-navigation__list-item {
@@ -41,11 +41,11 @@
 
   .page-navigation__list-item--logo {
     margin-bottom: 13px;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   .page-navigation__list-item--logo svg {
-    width: 68px;
+    width: 71px;
     height: 15px;
   }
 }

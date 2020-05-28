@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
   font-family: $additional-font;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-bold;
   font-size: $font-size-desktop-h2;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
 }
 
 @mixin h2-tablet {
   font-size: $font-size-tablet-h2;
+  letter-spacing: 1.26px;
 }
 
 @mixin h2-mobile {
   font-size: $font-size-mobile-h2;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.96px;
 }

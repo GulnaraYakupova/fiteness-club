@@ -35,8 +35,8 @@
 }
 
 .contacts__list li {
-  margin-bottom: 15px;
-  margin-right: 28%;
+  margin-bottom: 17px;
+  margin-right: 27.5%;
   width: auto;
 }
 
@@ -51,6 +51,7 @@
 .contacts address {
   font-style: normal;
   font-size: $font-size-desktop-s;
+  font-weight: $font-weight-regular;
   line-height: 1.523;
 }
 
@@ -58,11 +59,14 @@
   margin: 0;
   padding: 0;
   font-size: $font-size-desktop-s;
+  font-weight: $font-weight-regular;
   line-height: 1.523;
 }
 
 .contacts a {
+  display: block;
   font-size: $font-size-desktop-s;
+  font-weight: $font-weight-regular;
   color: $main-color;
   line-height: 1.523;
 }
@@ -80,7 +84,7 @@
   .contacts {
     padding-left: 17.4%;
     padding-right: 17.4%;
-    padding-bottom: 36px;
+    padding-bottom: 37px;
   }
 
   .contacts h2 {
@@ -90,6 +94,7 @@
 
   .contacts h3 {
     font-size: $font-size-mobile-l;
+    margin-bottom: 5px;
   }
 
   .contacts address {
@@ -117,8 +122,8 @@
 
   .contacts li {
     width: auto;
-    margin-right: 20%;
-    margin-bottom: 23px;
+    margin-right: 19%;
+    margin-bottom: 20px;
   }
 }
 

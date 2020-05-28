@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   padding-top: 120px;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
+  padding-left: 7.55%;
+  padding-right: 7.55%;
 }
 
 .promotions__wrapper {
@@ -149,7 +149,7 @@
   .promotions {
     padding-left: 5.9%;
     padding-right: 5.9%;
-    padding-top: 101px;
+    padding-top: 103px;
   }
 
   .promotions__wrapper {
@@ -158,7 +158,7 @@
 
   .promotions h2 {
     @include h2-tablet;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
   }
 
   .promotions__item {

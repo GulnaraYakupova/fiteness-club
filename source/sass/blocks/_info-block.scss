@@ -18,6 +18,7 @@
   line-height: $line-height-ss;
   margin-bottom: 12px;
   letter-spacing: 1.5px;
+  font-weight: $font-weight-regular;
 }
 
 .info-block h2 {
@@ -26,8 +27,9 @@
   width: 300px;
   font-family: $additional-font;
   font-size: $font-size-desktop-xxxl;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.27px;
   line-height: $line-height-ss;
   text-align: right;
 }
@@ -38,7 +40,7 @@
   width: 113px;
   margin-right: 265px;
   margin-top: -95px;
-  margin-bottom: 84px;
+  margin-bottom: 89px;
   list-style: none;
   font-size: $font-size-desktop-s;
 }
@@ -86,14 +88,20 @@
   opacity: 0.5;
 }
 
+.info-block__button {
+  margin-right: 2px;
+}
+
 @media (max-width: $tablet-full-width) {
   .info-block b {
     font-size: $font-size-tablet-xl;
     margin-bottom: 6px;
+    letter-spacing: 1.02px;
   }
 
   .info-block h2 {
     font-size: $font-size-tablet-xxxl;
+    letter-spacing: 2.58px;
     width: 235px;
   }
 
@@ -122,7 +130,7 @@
   .info-block__advantages-list {
     margin-top: -83px;
     margin-right: 213px;
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 }
 
@@ -134,10 +142,11 @@
   .info-block b {
     margin-bottom: 13px;
     font-size: $font-size-mobile-xl;
+    letter-spacing: 0.84px;
   }
 
   .info-block h2 {
-    letter-spacing: 2.5px;
+    letter-spacing: 2.34px;
     font-size: $font-size-mobile-xxxl;
   }
 

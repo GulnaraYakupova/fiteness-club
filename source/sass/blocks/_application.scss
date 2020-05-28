@@ -2,7 +2,7 @@
   color: $second-color;
   background-color: $main-color;
   box-sizing: border-box;
-  padding-left: 7.4%;
+  padding-left: 7.55%;
   padding-right: 12.4%;
   padding-top: 70px;
   padding-bottom: 40px;
@@ -56,7 +56,6 @@
 
 .application h2 {
   @include h2-desktop;
-  letter-spacing: 1.8px;
   margin-bottom: 19px;
 }
 
@@ -79,14 +78,15 @@
 
   .application input {
     width: 43.3%;
+    margin-bottom: 31px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
   .application {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 40px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    padding-bottom: 41px;
   }
 
   .application h2 {
