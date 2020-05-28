@@ -6,6 +6,10 @@
   padding-right: 7.5%;
 }
 
+.promotions__wrapper {
+  display: flex;
+}
+
 .promotions h2 {
   @include h2-desktop;
   align-self: center;
@@ -19,7 +23,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 502px;
+  width: 48%;
 }
 
 .promotions__first-br {
@@ -60,7 +64,7 @@
 }
 
 .promotions__item {
-  width: 48.3%;
+  width: 100%;
   box-sizing: border-box;
   color: $accent-background-3;
   border: 7px solid $border-color-3;
@@ -77,7 +81,7 @@
 }
 
 .promotions__item--additional {
-  padding: 24px 2.5%;
+  padding: 24px 4.9%;
   padding-bottom: 28px;
   line-height: 1;
   min-height: 211px;
@@ -148,6 +152,10 @@
     padding-top: 101px;
   }
 
+  .promotions__wrapper {
+    flex-direction: column;
+  }
+
   .promotions h2 {
     @include h2-tablet;
     margin-bottom: 41px;
@@ -161,6 +169,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: auto;
+    width: 100%;
   }
 
   .promotions__item--main {
