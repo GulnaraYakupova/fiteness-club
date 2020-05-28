@@ -55,52 +55,63 @@
   }
 }
 
-.banner__table {
-  width: 28%;
+.banner__list {
+  width: 27%;
   line-height: 1.5;
   font-weight: $font-weight-regular;
   font-size: $font-size-desktop-s;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
 }
 
-.banner__table td {
+.banner__item {
+  margin-bottom: 9px;
+  width: auto;
+}
+
+.banner__item-value {
   padding-bottom: 6.5px;
-}
-
-.banner__table-title {
-  font-weight: $font-weight-regular;
-  font-size: $font-size-desktop-mm;
-}
-
-.banner__table-value {
   font-weight: $font-weight-bold;
   font-size: $font-size-desktop-l3;
   line-height: 1.1;
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: 3px;
+  box-sizing: border-box;
 }
 
-.banner__table-value::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $second-color;
+.banner__item p {
+  margin-bottom: 0;
 }
 
-.banner__table-value span {
+p.banner__item-title {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-desktop-mm;
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $second-color;
+}
+
+.banner__item-title--first {
+  width: 68%;
+}
+
+.banner__item-title--second {
+  width: 94%;
+}
+
+.banner__item-value span {
   font-size: $font-size-desktop-s;
   font-weight: $font-weight-regular;
   line-height: 1.4;
   width: 70%;
   margin-top: 4px;
-}
-
-.banner__table tr {
-  margin-bottom: 9px;
-  display: flex;
-  flex-direction: column;
 }
 
 .banner__button {
@@ -128,21 +139,43 @@
     margin-bottom: -5px;
   }
 
-  .banner__table-title {
-    font-size: $font-size-tablet-s;
+  .banner__list {
+    margin-top: 3px;
+    width: 27.5%;
   }
 
-  .banner__table-value {
+  .banner__item {
+    margin-bottom: 3px;
+  }
+
+  .banner__item-value {
     font-size: $font-size-tablet-l;
+    padding-bottom: 0.5px;
   }
 
-  .banner__table-value span {
+  .banner__item-value span {
     font-size: $font-size-tablet-xs;
+    margin-top: 0;
+    line-height: 1.2;
   }
 
   .banner p {
     font-size: $font-size-tablet-s;
     margin-bottom: 34px;
+  }
+
+  p.banner__item-title {
+    margin-bottom: 0;
+    font-size: $font-size-tablet-s;
+    padding-bottom: 0.5px;
+  }
+
+  .banner__item-title--first {
+    width: 75%;
+  }
+
+  .banner__item-title--second {
+    width: 100%;
   }
 
   .banner__button {
@@ -152,12 +185,8 @@
     margin-bottom: 52px;
   }
 
-  .banner__table tr {
+  .banner__block {
     margin-bottom: 0;
-  }
-
-  .banner__table td {
-    padding-bottom: 0.5px;
   }
 }
 
