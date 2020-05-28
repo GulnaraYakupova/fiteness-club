@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   display: none;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .planes__list--shown {
@@ -64,7 +64,11 @@
   position: relative;
   z-index: 10;
   border: 7px solid transparent;
-  border-image: linear-gradient(to right bottom, $border-color-3, $gradient-color-3) 30;
+  margin-right: 3.5%;
+}
+
+.planes__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .planes__item:hover {
@@ -87,6 +91,7 @@
     width: 68%;
     padding-bottom: 61px;
     margin-bottom: 41px;
+    margin-right: 0;
   }
 
   .planes b {
