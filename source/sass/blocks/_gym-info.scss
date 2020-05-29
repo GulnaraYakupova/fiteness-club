@@ -5,6 +5,8 @@
   padding-bottom: 120px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 108px;
 }
 
 .gym-info__top {
@@ -38,11 +40,12 @@
 }
 
 .gym-info__video-block {
-  margin-left: 15px;
-  margin-top: -120px;
+  top: 408px;
+  left: 50%;
+  margin-left: -143px;
   width: 364px;
   height: 228px;
-  position: relative;
+  position: absolute;
   align-self: center;
 }
 
@@ -77,7 +80,7 @@
   cursor: pointer;
 }
 
-.gym-info__button:hover{
+.gym-info__button:hover {
   opacity: 0.7;
   outline: none;
 }
@@ -101,7 +104,8 @@
     padding-left: 5.9%;
     padding-right: 5.9%;
     padding-top: 52px;
-    padding-bottom: 100px;
+    padding-bottom: 76px;
+    margin-bottom: 100px;
   }
 
   .gym-info__top {
@@ -138,10 +142,11 @@
   }
 
   .gym-info__video-block {
+    top: auto;
+    bottom: 0;
     width: 266px;
     height: 167px;
-    margin-left: 0;
-    margin-top: -91px;
+    margin-left: -133px;
   }
 
   .gym-info video {
@@ -164,6 +169,7 @@
     padding-right: 0;
     padding-top: 21px;
     padding-bottom: 70px;
+    margin-bottom: 0;
   }
 
   .gym-info__top {
@@ -198,10 +204,12 @@
   }
 
   .gym-info__video-block {
-    margin-top: 0;
-    margin-right: 0;
     width: 100%;
     height: 167px;
+    margin-left: 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
   }
 
   .gym-info__video-block img {
