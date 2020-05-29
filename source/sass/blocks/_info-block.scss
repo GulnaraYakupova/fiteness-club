@@ -139,6 +139,10 @@
 }
 
 @media (max-width: $mobile-full-width) {
+  .info-block  {
+    justify-content: center;
+  }
+  
   .info-block__text {
     width: 290px;
   }
