@@ -28,6 +28,7 @@
   color: $accent-color-1;
   border-bottom: 2px solid transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .controls__button:last-child {
@@ -44,6 +45,7 @@
 }
 
 .controls__button--active {
+  cursor: auto;
   color: $main-color;
   border-color: $border-color-3;
 }
