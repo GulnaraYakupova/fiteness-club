@@ -1,3 +1,9 @@
+.page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .page-navigation__list {
   margin: 0;
   padding: 0;
@@ -6,14 +12,25 @@
   font-weight: $font-weight-regular;
   display: flex;
   flex-wrap: wrap;
+  min-width: 63.8%;
 }
 
 .page-navigation__list-item {
-  margin-right: 4.9%;
+  margin-right: 6.3%;
 }
 
-.page-navigation__list-item--logo {
-  flex-grow: 1;
+.page-navigation__list-item:first-child {
+  margin-left: 0;
+}
+
+.page-navigation__logo {
+  margin-top: 8px;
+  margin-left: 0;
+  margin-right: 6%;
+}
+
+.page-navigation__list-item:last-child {
+  margin-right: 0;
 }
 
 .page-navigation__link {
@@ -36,35 +53,85 @@
 }
 
 @media (max-width: $tablet-full-width) {
-  .page-navigation__list-item {
-    margin-right: 5.4%;
+  .page-navigation {
+    width: 83%;
   }
 
-  .page-navigation__list-item--logo svg {
+  .page-navigation__list {
+    min-width: 74.5%;
+  }
+  .page-navigation__list-item {
+    margin-right: 7.3%;
+  }
+
+  .page-navigation__logo {
+    margin-left: 0;
+    margin-right: 6%;
+    margin-top: 5px;
+  }
+
+  .page-navigation__logo svg {
     width: 82px;
     height: 18px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
-  .page-navigation__list {
-    font-size: $font-size-mobile-m;
+  .page-navigation {
     flex-direction: column;
-    height: 120px;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .page-navigation__list-item {
     margin-bottom: 16px;
-    margin-right: 32%;
+    margin-right: 10%;
+    width: 45%;
+    order: 10;
   }
 
-  .page-navigation__list-item--logo {
+  .page-navigation__logo {
     margin-bottom: 13px;
     margin-top: 2px;
   }
 
-  .page-navigation__list-item--logo svg {
+  .page-navigation__logo svg {
     width: 71px;
     height: 15px;
+  }
+
+  .page-navigation__list {
+    font-size: $font-size-mobile-m;
+    flex-direction: reverse;
+    min-width: 100%;
+  }
+
+  .page-navigation__list-item--promo {
+    order: 2;
+    margin-top: -40px;
+    margin-right: 0;
+  }
+
+  .page-navigation__list-item--services {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .page-navigation__list-item--trainers {
+    order: 4;
+    margin-top: -40px;
+    margin-right: 0;
+  }
+
+  .page-navigation__list-item--subs {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .page-navigation__list-item--sced {
+    order: 5;
+    margin-top: -40px;
+    margin-left: 55%;
+    margin-right: 0;
   }
 }
