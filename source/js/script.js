@@ -75,13 +75,28 @@ togglesBlock.addEventListener('click', function (evt) {
   }
 });
 
+var reviewsHeights = [reviews[0].clientHeight];
+
+for (var i = 1; i < reviews.length; i++) {
+  reviews[i].classList.remove('reviews__item--hidden');
+  reviewsHeights[i] = reviews[i].clientHeight;
+  reviews[i].classList.add('reviews__item--hidden');
+}
+
+var reviewsMaxHeight = Math.max.apply(null, reviewsHeights);
+reviews[0].style.minHeight = reviewsMaxHeight + 'px';
+for (var j = 1; j < reviewsHeights.length; j++) {
+  reviews[j].classList.remove('reviews__item--hidden');
+  reviews[j].style.minHeight = reviewsMaxHeight + 'px';
+  reviews[j].classList.add('reviews__item--hidden');
+}
 
 // работа слайдера в блоке Отзывы
 var slideReviewsToNext = function () {
   var currentIndex = 0;
-  for (var i = 0; i < reviews.length; i++) {
-    if (reviews[i].classList.contains('reviews__item--active')) {
-      currentIndex = i;
+  for (var a = 0; a < reviews.length; a++) {
+    if (reviews[a].classList.contains('reviews__item--active')) {
+      currentIndex = a;
       break;
     }
   }
@@ -100,9 +115,9 @@ var slideReviewsToNext = function () {
 
 var slideReviewsToPrevious = function () {
   var currentIndex = 0;
-  for (var i = 0; i < reviews.length; i++) {
-    if (reviews[i].classList.contains('reviews__item--active')) {
-      currentIndex = i;
+  for (var z = 0; z < reviews.length; z++) {
+    if (reviews[z].classList.contains('reviews__item--active')) {
+      currentIndex = z;
       break;
     }
   }
@@ -130,13 +145,11 @@ if (reviewsPrevButton && reviews) {
 var initialPoint;
 var finalPoint;
 document.addEventListener('touchstart', function (evt) {
-  evt.preventDefault();
   evt.stopPropagation();
   initialPoint = evt.changedTouches[0];
 }, false);
 
 document.addEventListener('touchend', function (evt) {
-  evt.preventDefault();
   evt.stopPropagation();
   finalPoint = evt.changedTouches[0];
   var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
@@ -175,16 +188,16 @@ var slideTrainersToNext = function () {
   var screenSize = getScreenSize();
 
   if (screenSize >= clientWidthMap.desktop) {
-    for (var i = 0; i < trainers.length; i++) {
-      if (!trainers[i].classList.contains('trainers__list-item--hidden')) {
-        firstIndex = i;
+    for (var b = 0; b < trainers.length; b++) {
+      if (!trainers[b].classList.contains('trainers__list-item--hidden')) {
+        firstIndex = b;
         break;
       }
     }
   } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
-    for (var j = 0; j < trainers.length; j++) {
-      if (!trainers[j].classList.contains('trainers__list-item--tablet-hidden')) {
-        firstIndex = j;
+    for (var c = 0; c < trainers.length; c++) {
+      if (!trainers[c].classList.contains('trainers__list-item--tablet-hidden')) {
+        firstIndex = c;
         break;
       }
     }
@@ -251,16 +264,16 @@ var slideTrainersToPrevious = function () {
   var screenSize = getScreenSize();
 
   if (screenSize >= clientWidthMap.desktop) {
-    for (var i = 0; i < trainers.length; i++) {
-      if (!trainers[i].classList.contains('trainers__list-item--hidden')) {
-        firstIndex = i;
+    for (var d = 0; d < trainers.length; d++) {
+      if (!trainers[d].classList.contains('trainers__list-item--hidden')) {
+        firstIndex = d;
         break;
       }
     }
   } else if (screenSize < clientWidthMap.tablet && screenSize > clientWidthMap.mobile) {
-    for (var j = 0; j < trainers.length; j++) {
-      if (!trainers[j].classList.contains('trainers__list-item--tablet-hidden')) {
-        firstIndex = j;
+    for (var e = 0; e < trainers.length; e++) {
+      if (!trainers[e].classList.contains('trainers__list-item--tablet-hidden')) {
+        firstIndex = e;
         break;
       }
     }
@@ -329,13 +342,11 @@ trainersPrevButton.addEventListener('click', slideTrainersToPrevious);
 var initialPointTrainers;
 var finalPointTrainers;
 document.addEventListener('touchstart', function (evt) {
-  evt.preventDefault();
   evt.stopPropagation();
   initialPointTrainers = evt.changedTouches[0];
 }, false);
 
 document.addEventListener('touchend', function (evt) {
-  evt.preventDefault();
   evt.stopPropagation();
   finalPointTrainers = evt.changedTouches[0];
   var xAbs = Math.abs(initialPointTrainers.pageX - finalPointTrainers.pageX);
