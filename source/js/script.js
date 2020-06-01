@@ -75,11 +75,11 @@ togglesBlock.addEventListener('click', function (evt) {
   }
 });
 
-var reviewsHeights = [reviews[0].clientHeight];
+var reviewsHeights = [reviews[0].height];
 
 for (var i = 1; i < reviews.length; i++) {
   reviews[i].classList.remove('reviews__item--hidden');
-  reviewsHeights[i] = reviews[i].clientHeight;
+  reviewsHeights[i] = reviews[i].height;
   reviews[i].classList.add('reviews__item--hidden');
 }
 
