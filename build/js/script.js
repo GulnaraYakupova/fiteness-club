@@ -18,12 +18,14 @@ var togglesMap = {
 var phoneField = document.querySelector('#phone');
 
 // для слайдера отзывов
+var reviewsNode = document.querySelector('#reviews');
 var reviewsPrevButton = document.querySelector('#reviews-prev');
 var reviewsNextButton = document.querySelector('#reviews-next');
 var reviews = Array.prototype.slice.call(document.querySelectorAll('.reviews__item'));
 var reviewsStep = 1;
 
 // для слайдера тренеров
+var trainersNode = document.querySelector('#trainers');
 var trainersPrevButton = document.querySelector('#trainers-prev');
 var trainersNextButton = document.querySelector('#trainers-next');
 var trainers = Array.prototype.slice.call(document.querySelectorAll('.trainers__list-item'));
@@ -75,51 +77,81 @@ togglesBlock.addEventListener('click', function (evt) {
 
 
 // работа слайдера в блоке Отзывы
+var slideReviewsToNext = function () {
+  var currentIndex = 0;
+  for (var i = 0; i < reviews.length; i++) {
+    if (reviews[i].classList.contains('reviews__item--active')) {
+      currentIndex = i;
+      break;
+    }
+  }
+
+  reviews[currentIndex].classList.remove('reviews__item--active');
+  reviews[currentIndex].classList.add('reviews__item--hidden');
+
+  if (currentIndex < reviews.length - 1) {
+    reviews[currentIndex + reviewsStep].classList.remove('reviews__item--hidden');
+    reviews[currentIndex + reviewsStep].classList.add('reviews__item--active');
+  } else {
+    reviews[0].classList.remove('reviews__item--hidden');
+    reviews[0].classList.add('reviews__item--active');
+  }
+};
+
+var slideReviewsToPrevious = function () {
+  var currentIndex = 0;
+  for (var i = 0; i < reviews.length; i++) {
+    if (reviews[i].classList.contains('reviews__item--active')) {
+      currentIndex = i;
+      break;
+    }
+  }
+
+  reviews[currentIndex].classList.remove('reviews__item--active');
+  reviews[currentIndex].classList.add('reviews__item--hidden');
+
+  if (currentIndex > 0) {
+    reviews[currentIndex - reviewsStep].classList.remove('reviews__item--hidden');
+    reviews[currentIndex - reviewsStep].classList.add('reviews__item--active');
+  } else {
+    reviews[reviews.length - 1].classList.remove('reviews__item--hidden');
+    reviews[reviews.length - 1].classList.add('reviews__item--active');
+  }
+};
+
 if (reviewsNextButton && reviews) {
-  reviewsNextButton.addEventListener('click', function () {
-    var currentIndex = 0;
-    for (var i = 0; i < reviews.length; i++) {
-      if (reviews[i].classList.contains('reviews__item--active')) {
-        currentIndex = i;
-        break;
-      }
-    }
-
-    reviews[currentIndex].classList.remove('reviews__item--active');
-    reviews[currentIndex].classList.add('reviews__item--hidden');
-
-    if (currentIndex < reviews.length - 1) {
-      reviews[currentIndex + reviewsStep].classList.remove('reviews__item--hidden');
-      reviews[currentIndex + reviewsStep].classList.add('reviews__item--active');
-    } else {
-      reviews[0].classList.remove('reviews__item--hidden');
-      reviews[0].classList.add('reviews__item--active');
-    }
-  });
+  reviewsNextButton.addEventListener('click', slideReviewsToNext);
 }
 
 if (reviewsPrevButton && reviews) {
-  reviewsPrevButton.addEventListener('click', function () {
-    var currentIndex = 0;
-    for (var i = 0; i < reviews.length; i++) {
-      if (reviews[i].classList.contains('reviews__item--active')) {
-        currentIndex = i;
-        break;
+  reviewsPrevButton.addEventListener('click', slideReviewsToPrevious);
+}
+
+var initialPoint;
+var finalPoint;
+document.addEventListener('touchstart', function (evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  initialPoint = evt.changedTouches[0];
+}, false);
+
+document.addEventListener('touchend', function (evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  finalPoint = evt.changedTouches[0];
+  var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+  var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+  if (evt.target.closest('section') === reviewsNode) {
+    if (xAbs > 20 || yAbs > 20) {
+      if (finalPoint.pageX < initialPoint.pageX) {
+        slideReviewsToNext();
+      } else {
+        slideReviewsToPrevious();
       }
     }
+  }
 
-    reviews[currentIndex].classList.remove('reviews__item--active');
-    reviews[currentIndex].classList.add('reviews__item--hidden');
-
-    if (currentIndex > 0) {
-      reviews[currentIndex - reviewsStep].classList.remove('reviews__item--hidden');
-      reviews[currentIndex - reviewsStep].classList.add('reviews__item--active');
-    } else {
-      reviews[reviews.length - 1].classList.remove('reviews__item--hidden');
-      reviews[reviews.length - 1].classList.add('reviews__item--active');
-    }
-  });
-}
+}, false);
 
 
 // работа слайдера в блоке Тренеры
@@ -138,7 +170,7 @@ var getScreenSize = function () {
   return document.body.clientWidth;
 };
 
-trainersNextButton.addEventListener('click', function () {
+var slideTrainersToNext = function () {
   var firstIndex = 0;
   var screenSize = getScreenSize();
 
@@ -212,9 +244,9 @@ trainersNextButton.addEventListener('click', function () {
       item.classList.add('trainers__list-item--mobile-hidden');
     }
   });
-});
+};
 
-trainersPrevButton.addEventListener('click', function () {
+var slideTrainersToPrevious = function () {
   var firstIndex = 0;
   var screenSize = getScreenSize();
 
@@ -288,4 +320,34 @@ trainersPrevButton.addEventListener('click', function () {
       item.classList.add('trainers__list-item--mobile-hidden');
     }
   });
-});
+};
+
+trainersNextButton.addEventListener('click', slideTrainersToNext);
+
+trainersPrevButton.addEventListener('click', slideTrainersToPrevious);
+
+var initialPointTrainers;
+var finalPointTrainers;
+document.addEventListener('touchstart', function (evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  initialPointTrainers = evt.changedTouches[0];
+}, false);
+
+document.addEventListener('touchend', function (evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  finalPointTrainers = evt.changedTouches[0];
+  var xAbs = Math.abs(initialPointTrainers.pageX - finalPointTrainers.pageX);
+  var yAbs = Math.abs(initialPointTrainers.pageY - finalPointTrainers.pageY);
+  if (evt.target.closest('section') === trainersNode) {
+    if (xAbs > 20 || yAbs > 20) {
+      if (finalPointTrainers.pageX < initialPointTrainers.pageX) {
+        slideTrainersToNext();
+      } else {
+        slideTrainersToPrevious();
+      }
+    }
+  }
+
+}, false);
