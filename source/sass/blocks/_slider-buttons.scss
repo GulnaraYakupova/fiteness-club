@@ -14,8 +14,8 @@
 
 .slider-buttons__button:hover svg,
 .slider-buttons__button:focus svg {
-  width: 20px;
-  height: 34px;
+  width: 24px;
+  height: 40px;
 }
 
 .slider-buttons__button:active {
@@ -27,4 +27,10 @@
     width: 11px;
     height: 20px;
   }
+
+  .slider-buttons__button:hover svg,
+  .slider-buttons__button:focus svg {
+  width: 20px;
+  height: 34px;
+}
 }
