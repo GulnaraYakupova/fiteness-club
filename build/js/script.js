@@ -75,20 +75,20 @@ togglesBlock.addEventListener('click', function (evt) {
   }
 });
 
-var reviewsHeights = [reviews[0].height];
+var reviewsHeights = [reviews[0].clientHeight];
 
 for (var i = 1; i < reviews.length; i++) {
   reviews[i].classList.remove('reviews__item--hidden');
-  reviewsHeights[i] = reviews[i].height;
+  reviewsHeights[i] = reviews[i].clientHeight;
   reviews[i].classList.add('reviews__item--hidden');
 }
 
 var reviewsMaxHeight = Math.max.apply(null, reviewsHeights);
-
-reviews[0].style.minHeight = reviewsMaxHeight + 'px';
+console.log(reviewsMaxHeight);
+reviews[0].style.height = reviewsMaxHeight + 'px';
 for (var j = 1; j < reviewsHeights.length; j++) {
   reviews[j].classList.remove('reviews__item--hidden');
-  reviews[j].style.minHeight = reviewsMaxHeight + 'px';
+  reviews[j].style.height = reviewsMaxHeight + 'px';
   reviews[j].classList.add('reviews__item--hidden');
 }
 
