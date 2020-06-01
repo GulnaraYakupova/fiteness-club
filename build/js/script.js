@@ -84,7 +84,7 @@ for (var i = 1; i < reviews.length; i++) {
 }
 
 var reviewsMaxHeight = Math.max.apply(null, reviewsHeights);
-console.log(reviewsMaxHeight);
+
 reviews[0].style.height = reviewsMaxHeight + 'px';
 for (var j = 1; j < reviewsHeights.length; j++) {
   reviews[j].classList.remove('reviews__item--hidden');
