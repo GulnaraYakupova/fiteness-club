@@ -12,6 +12,11 @@
   cursor: pointer;
 }
 
+.slider-buttons__button:hover,
+.slider-buttons__button:active {
+  outline: none;
+}
+
 .slider-buttons__button:hover svg,
 .slider-buttons__button:focus svg {
   width: 24px;
