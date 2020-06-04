@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 83.7%;
+  width: 560px;
   box-shadow: 0 0 40px $shadow-color;
 }
 
@@ -91,7 +91,7 @@
   }
 
   .reviews__list {
-    width: 83.2%;
+    width: 566px;
   }
 
   .reviews p {
@@ -107,6 +107,7 @@
   .reviews__item {
     padding-bottom: 33px;
     padding-top: 53px;
+    min-height: auto;
   }
 
   .reviews h3 {
@@ -143,7 +144,7 @@
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 32px;
-    padding-bottom: 0;
+    padding-bottom: 32px;
   }
 
   .reviews h3 {
