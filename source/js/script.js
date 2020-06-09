@@ -40,7 +40,6 @@ window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
 
 
 // переключение табов в блоке Абонементы
-
 togglesBlock.addEventListener('click', function (evt) {
   if (!evt.target.closest('button').classList.contains('controls__button--active')) {
     for (var i = 0; i < toggles.length; i++) {
@@ -244,6 +243,7 @@ var slideTrainersToPrevious = function () {
   });
 };
 
+// свайп слайдера
 trainersNextButton.addEventListener('click', slideTrainersToNext);
 
 trainersPrevButton.addEventListener('click', slideTrainersToPrevious);

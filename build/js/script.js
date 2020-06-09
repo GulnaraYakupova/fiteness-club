@@ -17,13 +17,6 @@ var togglesMap = {
 // для валидации телофона
 var phoneField = document.querySelector('#phone');
 
-// для слайдера отзывов
-var reviewsList = document.querySelector('.reviews__list');
-var reviewsPrevButton = document.querySelector('#reviews-prev');
-var reviewsNextButton = document.querySelector('#reviews-next');
-var reviews = Array.prototype.slice.call(document.querySelectorAll('.reviews__item'));
-var reviewsStep = 1;
-
 // для слайдера тренеров
 var trainersNode = document.querySelector('#trainers');
 var trainersPrevButton = document.querySelector('#trainers-prev');
@@ -47,7 +40,6 @@ window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
 
 
 // переключение табов в блоке Абонементы
-
 togglesBlock.addEventListener('click', function (evt) {
   if (!evt.target.closest('button').classList.contains('controls__button--active')) {
     for (var i = 0; i < toggles.length; i++) {
@@ -75,102 +67,14 @@ togglesBlock.addEventListener('click', function (evt) {
   }
 });
 
-// var reviewsHeights = [reviews[0].clientHeight];
 
-// for (var i = 1; i < reviews.length; i++) {
-//   reviews[i].classList.remove('reviews__item--hidden');
-//   reviewsHeights[i] = reviews[i].clientHeight;
-//   reviews[i].classList.add('reviews__item--hidden');
-// }
-
-// var reviewsMaxHeight = Math.max.apply(null, reviewsHeights);
-
-// reviews[0].style.minHeight = reviewsMaxHeight + 'px';
-// for (var j = 1; j < reviewsHeights.length; j++) {
-//   reviews[j].classList.remove('reviews__item--hidden');
-//   reviews[j].style.minHeight = reviewsMaxHeight + 'px';
-//   reviews[j].classList.add('reviews__item--hidden');
-// }
-
-// // работа слайдера в блоке Отзывы
-// var slideReviewsToNext = function () {
-//   var currentIndex = 0;
-//   for (var a = 0; a < reviews.length; a++) {
-//     if (reviews[a].classList.contains('reviews__item--active')) {
-//       currentIndex = a;
-//       break;
-//     }
-//   }
-
-//   reviews[currentIndex].classList.remove('reviews__item--active');
-//   reviews[currentIndex].classList.add('reviews__item--hidden');
-
-//   if (currentIndex < reviews.length - 1) {
-//     reviews[currentIndex + reviewsStep].classList.remove('reviews__item--hidden');
-//     reviews[currentIndex + reviewsStep].classList.add('reviews__item--active');
-//   } else {
-//     reviews[0].classList.remove('reviews__item--hidden');
-//     reviews[0].classList.add('reviews__item--active');
-//   }
-// };
-
-// var slideReviewsToPrevious = function () {
-//   var currentIndex = 0;
-//   for (var z = 0; z < reviews.length; z++) {
-//     if (reviews[z].classList.contains('reviews__item--active')) {
-//       currentIndex = z;
-//       break;
-//     }
-//   }
-
-//   reviews[currentIndex].classList.remove('reviews__item--active');
-//   reviews[currentIndex].classList.add('reviews__item--hidden');
-
-//   if (currentIndex > 0) {
-//     reviews[currentIndex - reviewsStep].classList.remove('reviews__item--hidden');
-//     reviews[currentIndex - reviewsStep].classList.add('reviews__item--active');
-//   } else {
-//     reviews[reviews.length - 1].classList.remove('reviews__item--hidden');
-//     reviews[reviews.length - 1].classList.add('reviews__item--active');
-//   }
-// };
-
-// if (reviewsNextButton && reviews) {
-//   reviewsNextButton.addEventListener('click', slideReviewsToNext);
-// }
-
-// if (reviewsPrevButton && reviews) {
-//   reviewsPrevButton.addEventListener('click', slideReviewsToPrevious);
-// }
-
-// var initialPoint;
-// var finalPoint;
-// document.addEventListener('touchstart', function (evt) {
-//   evt.stopPropagation();
-//   initialPoint = evt.changedTouches[0];
-// }, false);
-
-// document.addEventListener('touchend', function (evt) {
-//   evt.stopPropagation();
-//   finalPoint = evt.changedTouches[0];
-//   var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-//   var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-//   if (evt.target.closest('section') === reviewsNode) {
-//     if (xAbs > 20 || yAbs > 20) {
-//       if (finalPoint.pageX < initialPoint.pageX) {
-//         slideReviewsToNext();
-//       } else {
-//         slideReviewsToPrevious();
-//       }
-//     }
-//   }
-
-// }, false);
+// работа слайдера в блоке Отзывы
 
 $('.reviews__list').slick({
   swipe: true,
   touchMove: true,
 });
+
 // работа слайдера в блоке Тренеры
 var getSliderStep = function () {
   var clientWidth = document.body.clientWidth;
@@ -339,6 +243,7 @@ var slideTrainersToPrevious = function () {
   });
 };
 
+// свайп слайдера
 trainersNextButton.addEventListener('click', slideTrainersToNext);
 
 trainersPrevButton.addEventListener('click', slideTrainersToPrevious);
